@@ -20,6 +20,10 @@ License URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
   unicode-range: U+270C;
 }
 
+.mui-container {
+  margin-top: 120px;
+}
+
 .typl8-tera, .typl8-giga, .typl8-mega, h1, .typl8-alpha, h2, .typl8-beta, h3, .typl8-gamma, h4, .typl8-delta, h5, .typl8-epsilon, .typl8-zeta, h6 {
   text-rendering: optimizeLegibility;
   line-height: 1;
