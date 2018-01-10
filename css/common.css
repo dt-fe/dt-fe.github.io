@@ -179,9 +179,14 @@ body {
   padding-top: 1em; }
   .header .logo {
     float: left;
-    width: 124px;
+    width: 154px;
+    line-height: 36px;
     height: 36px;
-    background: url("https://img.alicdn.com/tps/TB1e5VdPXXXXXXeXpXXXXXXXXXX-124-36.png"); }
+    vertical-align: center;
+    /* background: url("/favicon.ico"); 
+    background-size: contain;
+    background-repeat: no-repeat; */
+  }
   .header .navigation {
     float: right;
     height: 36px;
@@ -207,7 +212,9 @@ body {
   position: fixed;
   top: 0;
   min-width: 1200px;
-  background-color: #1B1D26; }
+  background-color: #1B1D26;
+  color: #fe512c;
+}
 
 .header-wapper .header {
   top: 0;
