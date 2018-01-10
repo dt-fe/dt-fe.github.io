@@ -1,641 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>主页</title>
-	<link rel="stylesheet" href="css/home.css">
+  <meta charset="UTF-8">
+  <title>主页</title>
+  <link rel="stylesheet" href="css/home.css">
 
-	<script src="src/wow.js"></script>
-	<!-- <script type="text/javascript" src="https://g.alicdn.com/dt/libs/d3/3.5.17/d3.min.js"></script> -->
+  <script src="src/wow.js"></script>
+  <!-- <script type="text/javascript" src="https://g.alicdn.com/dt/libs/d3/3.5.17/d3.min.js"></script> -->
 
-	<script type="text/javascript" src="https://g.alicdn.com/dt/libs/d3/3.5.17/d3.min.js"></script>
-	<script type="text/javascript" src="https://g.alicdn.com/dt/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" src="https://g.alicdn.com/dt/libs/anime/1.0.0/anime.js"></script>
-	<script type="text/javascript" src="https://g.alicdn.com/dt/libs/threejs/0.76.0/three.min.js"></script>
-	<script type="text/javascript" src="https://g.alicdn.com/dt/libs/threed/OrbitControls.js"></script>
+  <script type="text/javascript" src="https://g.alicdn.com/dt/libs/d3/3.5.17/d3.min.js"></script>
+  <script type="text/javascript" src="https://g.alicdn.com/dt/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://g.alicdn.com/dt/libs/anime/1.0.0/anime.js"></script>
+  <script type="text/javascript" src="https://g.alicdn.com/dt/libs/threejs/0.76.0/three.min.js"></script>
+  <script type="text/javascript" src="https://g.alicdn.com/dt/libs/threed/OrbitControls.js"></script>
 
 </head>
 
 <body class="home">
 
-	<div id="toTop">
-		<span class="iconfont">&#xe672;</span>
-	</div>
+  <div id="toTop">
+    <span class="iconfont">&#xe672;</span>
+  </div>
 
-	<div class="header-placeholder"></div>
-	<div class="header-wapper">
-		<div class="header">
-			<div class="logo"></div>
-			<div class="navigation">
-				<ul>
-					<li>
-						<a class="act">
-							首页
-						</a>
-					</li>
-					<li>
-						<a href="./sycm">
-							数据产品
-						</a>
-					</li>
-					<li>
-						<a href="./onedata">
-							OneData
-						</a>
-					</li>
-					<li>
-						<a href="./dv">
-							数据可视化
-						</a>
-					</li>
-					<!-- <li>
-						<a href="./submit">
-							活动峰会
-						</a>
-					</li> -->
-					<li>
-						<a href="./aboutus">
-							关于我们
-						</a>
-					</li>
-					<li>
-						<a href="./joinus">
-							加入我们
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+  <div class="header-placeholder"></div>
+  <div class="header-wapper">
+    <div class="header">
+      <div class="logo"></div>
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="./">
+              关于我们
+            </a>
+          </li>
+          <li>
+            <a href="./pure-render.html">
+              pure render
+            </a>
+          </li>
+          <li>
+            <a href="./frontend-perusal.html">
+              前端精读评论
+            </a>
+          </li>
+          <li>
+            <a href="./joinus.html">
+              加入我们
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-	<div class="layer main-layer">
+  <div class="footer">
+      <div class="wrapper">
+        <ul class="links-BU">
+          <li><a target="_blank" href="https://www.alibabagroup.com/cn/global/home">阿里巴巴集团</a></li>
+          <li><a target="_blank" href="https://dt.alibaba.com/">阿里数据</a></li>
+        </ul>
+        <ul class="links-info">
+          © 2003-2018 阿里数据前端团队 DT-FE
+        </ul>
+      </div>
+  </div>
 
-		<div class="main-layer-bg bg-1"></div>
-	</div>
-	<div class="foot-bar">
-		<ul class="wrapper">
-			<li class="bar-column left">
-				<div class="bar-group">
-					<div class="sprite sprite-time"></div>
-					<div class="bar-item">
-						<div class="data-value"></div>
-						<div class="data-text"></div>
-					</div>
-				</div>
-
-				<div class="bar-group">
-					<div class="sprite sprite-box"></div>
-					<div class="bar-item">
-						<div class="data-value"></div>
-						<div class="data-text"></div>
-					</div>
-				</div>
-			</li>
-
-			<li class="bar-column middle">
-				<div class="bar-group">
-					<div class="sprite sprite-store"></div>
-					<div class="bar-item">
-						<div class="data-value"></div>
-						<div class="data-text"></div>
-					</div>
-				</div>
-
-				<div class="bar-group">
-					<div class="sprite sprite-home"></div>
-					<div class="bar-item">
-						<div class="data-value"></div>
-						<div class="data-text"></div>
-					</div>
-				</div>
-			</li>
-
-			<li class="bar-column right">
-				<div class="bar-group">
-					<div class="sprite sprite-time"></div>
-					<div class="bar-item">
-						<div class="data-value"></div>
-						<div class="data-text"></div>
-					</div>
-				</div>
-
-				<div class="bar-group">
-					<div class="sprite sprite-chart"></div>
-					<div class="bar-item">
-						<div class="data-value"></div>
-						<div class="data-text"></div>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<div class="layer layer1">
-
-		<div class="banner">
-			<div class="img"></div>
-
-			<svg width="917" height="917">
-				<circle
-					cx="458"
-					cy="458"
-					class="circle circle-b3"/>
-				<circle
-					cx="458"
-					cy="458"
-					class="circle circle-b2"/>
-				<circle
-					cx="458"
-					cy="458"
-					class="circle circle-b"/>
-				<circle
-					cx="458"
-					cy="458"
-					class="circle circle-m"/>
-				<circle
-					cx="458"
-					cy="458"
-					class="circle circle-s"/>
-			</svg>
-		</div>
-
-
-		<div class="wrapper">
-			<div class="panel-title wowtmp fadeInUp">
-				<span class="number">01</span>
-				<span class="line"></span>
-				<span class="text">顶层设计</span>
-			</div>
-
-			<div class="panel-content">
-				<div class="column">
-					<div class="item wowtmp fadeInUp delay1">
-						<h3 class="panel-keyword">数据资产</h3>
-						<div class="panel-desc">
-							全域大数据，统一的数据建设、管理、服务，大数据的“水电煤”，服务阿里外部千万用户和内部业务
-						</div>
-					</div>
-
-					<div class="item wowtmp fadeInUp delay2">
-						<h3 class="panel-keyword">对外数据服务</h3>
-						<div class="panel-desc">
-							开放阿里数据能力，发挥阿里数据价值，赋能千万商家、中小企业、创业者以及社会大众
-						</div>
-					</div>
-				</div>
-
-				<div class="column">
-					<div class="item wowtmp fadeInUp delay1">
-						<h3 class="panel-keyword">数据技术</h3>
-						<div class="panel-desc">
-							采集、计算、存储……为大数据提供底层技术支持，支撑和驱动业务发展的同时，沉淀和探索创新技术
-						</div>
-					</div>
-					<div class="item wowtmp fadeInUp delay2">
-						<h3 class="panel-keyword">对内数据服务</h3>
-						<div class="panel-desc">
-							统一对内数据服务和数据产品，助力阿里集团业务发展，让业务更清晰，让决策更高效
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="layer layer2">
-		<div class="wrapper">
-
-			<div class="image">
-				<canvas width="650" height="444" id="particle-line"></canvas>
-			</div>
-
-			<div class="container">
-
-				<div class="panel-title wowtmp fadeInUp">
-					<span class="number">02</span>
-					<span class="line"></span>
-					<span class="text">数据资产</span>
-				</div>
-
-				<div class="panel-content">
-					<div class="column">
-						<h3 class="panel-keyword wowtmp fadeInUp delay1">
-							交易 / 支付 / 物流 / 搜索 / 广告 / 信用 / 视频 / 音乐 / 风控 …
-						</h3>
-						<div class="panel-desc wowtmp fadeInUp delay2">
-							得益于阿里巴巴集团丰富的生态和业务，阿里数据沉淀了包括电商交易、搜索、物流、支付、广告、风控、电影、移动、视频、音乐、位置等种类多样的高质量数据，为发挥大数据的价值奠定坚实基础。
-						</div>
-						<div class="panel-more wowtmp fadeInUp delay4">
-							<a target="_blank" href="./onedata.htm">了解更多</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="layer layer3 dark">
-		<div class="wrapper">
-			<div id="three-container">
-			</div>
-			<div class="container">
-				<div class="banner 3d-earth-img"></div>
-				<div class="panel-title wowtmp fadeInUp">
-					<span class="number">03</span>
-					<span class="line"></span>
-					<span class="text">数据可视化</span>
-				</div>
-				<div class="panel-content">
-					<div class="column">
-						<h3 class="panel-keyword wowtmp fadeInUp delay1">
-							业务 + 数据 + 技术 + 设计
-						</h3>
-						<div class="panel-desc wowtmp fadeInUp delay2">
-							丰富的业务+海量数据+前沿web端技术+创新多维设计，共同打造出阿里数据可视化，感受大数据的心跳，清晰有效传达数据背后业务的蓬勃发展
-						</div>
-						<div class="panel-more wowtmp fadeInUp delay4">
-							<a target="_blank" href="./dv.htm">了解更多</a>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-	<div class="layer layer4">
-		<div class="wrapper">
-			<div class="panel-title wowtmp fadeInUp">
-				<span class="number">04</span>
-				<span class="line"></span>
-				<span class="text">数据产品</span>
-			</div>
-			<div class="panel-content">
-				<div class="product-logo sycm wowtmp zoomIn"></div>
-				<h3 class="panel-keyword wowtmp fadeInUp delay1">
-					阿里巴巴统一的商家数据产品平台
-				</h3>
-				<div class="panel-desc wowtmp fadeInUp delay2">
-					打造商家一盘生意背后一盘数据的数据产品服务。基于全渠道数据融合、全链路数据产品集成，为商家提供数据披露、分析、诊断、建议、优化、预测等一站式数据产品服务。目前，服务的商家已经超过2000万，月服务商家超过600万；在月成交额30万元以上的商家中，逾90%在使用生意参谋。
-				</div>
-				<div class="panel-more wowtmp fadeInUp delay3">
-					<a target="_blank" href="./sycm.htm">了解更多“生意参谋”</a>
-				</div>
-			</div>
-
-			<div class="banner">
-				<div class="img img-left wow"></div>
-				<div class="img img-middle"></div>
-				<div class="img img-right wow"></div>
-			</div>
-		</div>
-	</div>
-	<div class="layer layer4-2">
-		<div class="wrapper">
-			<div class="panel-content">
-				<div class="product-logo kmd wowtmp zoomIn"></div>
-				<h3 class="panel-keyword wowtmp fadeInUp delay1">
-					领先的第三方云BI工具
-				</h3>
-				<div class="panel-desc wowtmp fadeInUp delay2">
-					以“让业务更清晰，让决策更高效”为愿景，提供一站式多维分析、数据建模、可视化应用、智能建站等工具套件；帮助企业快速有效进行数据的可视化及联合（多维）分析，完成数据决策。
-				</div>
-				<div class="panel-more wowtmp fadeInUp delay3">
-					<a target="_blank" href="./kmd.htm">了解更多“孔明灯”</a>
-				</div>
-			</div>
-
-			<div class="img-wrapper">
-				<div class="img img2right wow"></div>
-				<div class="img img2left wow"></div>
-			</div>
-		</div>
-		<div class="banner">
-			<svg width="1892px" height="231px" viewBox="0 0 1892 231" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" class="bar">
-				<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-				    <g transform="translate(-16.000000, -4211.000000)" fill="#F0F0F0">
-				        <g id="Group-60" transform="translate(16.000000, 4211.000000)">
-				            <rect width="16" height="200" opacity="0.699999988" y="100" x="56"></rect>
-				            <rect width="16" height="200" opacity="0.600000024" y="100" x="28"></rect>
-				            <rect width="16" height="200" opacity="0.400000006" y="100" x="0"></rect>
-				            <rect width="16" height="200" opacity="0.600000024" y="100" x="84"></rect>
-				            <rect width="16" height="200" opacity="0.800000012" y="100" x="112"></rect>
-				            <rect width="16" height="200" opacity="0.699999988" y="100" x="140"></rect>
-				            <rect width="16" height="200" opacity="0.800000012" y="100" x="168"></rect>
-				            <rect width="16" height="200" opacity="0.5" y="100" x="196"></rect>
-				            <rect width="16" height="200" y="100" x="224"></rect>
-				            <rect width="16" height="200" y="100" x="252"></rect>
-				            <rect width="16" height="200" y="100" x="280"></rect>
-				            <rect width="16" height="200" y="100" x="308"></rect>
-				            <rect width="16" height="200" y="100" x="336"></rect>
-				            <rect width="16" height="200" opacity="0.699999988" y="100" x="364"></rect>
-				            <rect width="16" height="200" y="100" x="392"></rect>
-				            <rect width="16" height="200" opacity="0.5" y="100" x="420"></rect>
-				            <rect width="16" height="200" opacity="0.300000012" y="100" x="448"></rect>
-				            <rect width="16" height="200" opacity="0.5" y="100" x="476"></rect>
-				            <rect width="16" height="200" opacity="0.400000006" y="100" x="504"></rect>
-
-				           <!--  <rect width="16" height="200" opacity="0.800000012" x="532" y="100"></rect>
-			                <rect width="16" height="200" opacity="0.600000024" x="560" y="100"></rect>
-			                <rect width="16" height="200" opacity="0.400000006" x="588" y="100"></rect>
-			                <rect width="16" height="200" x="616" y="100"></rect>
-			                <rect width="16" height="200" opacity="0.600000024" x="644" y="100"></rect>
-			                <rect width="16" height="200" opacity="0.800000012" x="672" y="1100"></rect>
-			                <rect width="16" height="200" opacity="0.699999988" x="700" y="1100"></rect>
-			                <rect width="16" height="200" opacity="0.600000024" x="728" y="100"></rect>
-			                <rect width="16" height="200" opacity="0.900000036" x="756" y="100"></rect>
-			                <rect width="16" height="200" opacity="0.600000024" x="784" y="1100"></rect>
-			                <rect width="16" height="200" opacity="0.699999988" x="812" y="1100"></rect>
-			                <rect width="16" height="200" opacity="0.5" x="840" y="100"></rect>
-			                <rect width="16" height="200" opacity="0.900000036" x="868" y="100"></rect>
-			                <rect width="16" height="200" opacity="0.5" x="896" y="100"></rect> -->
-
-							<rect width="16" height="200" x="924" y="100"></rect>
-							<rect width="16" height="200" x="952" y="100"></rect>
-							<rect width="16" height="200" x="980" y="100"></rect>
-							<rect width="16" height="200" x="1008" y="100"></rect>
-							<rect width="16" height="200" x="1036" y="100"></rect>
-							<rect width="16" height="200" x="1064" y="100"></rect>
-							<rect width="16" height="200" x="1092" y="100"></rect>
-							<rect width="16" height="200" x="1120" y="100"></rect>
-							<rect width="16" height="200" x="1148" y="100"></rect>
-							<rect width="16" height="200" x="1176" y="100"></rect>
-							<rect width="16" height="200" x="1204" y="100"></rect>
-							<rect width="16" height="200" x="1232" y="100"></rect>
-							<rect width="16" height="200" x="1260" y="100"></rect>
-							<rect width="16" height="200" x="1288" y="100"></rect>
-							<rect width="16" height="200" x="1316" y="100"></rect>
-							<rect width="16" height="200" x="1344" y="100"></rect>
-
-
-
-				            <rect width="16" height="200" y="100" x="1372"></rect>
-				            <rect width="16" height="200" y="100" x="1400"></rect>
-				            <rect width="16" height="200" opacity="0.5" y="100" x="1428"></rect>
-				            <rect width="16" height="200" y="100" x="1456"></rect>
-				            <rect width="16" height="200" y="100" x="1484"></rect>
-				            <rect width="16" height="200" y="100" x="1512"></rect>
-				            <rect width="16" height="200" opacity="0.5" y="100" x="1540"></rect>
-				            <rect width="16" height="200" opacity="0.800000012" y="100" x="1568"></rect>
-				            <rect width="16" height="200" opacity="0.699999988" y="100" x="1596"></rect>
-				            <rect width="16" height="200" y="100" x="1624"></rect>
-				            <rect width="16" height="200" opacity="0.600000024" y="100" x="1652"></rect>
-				            <rect width="16" height="200" opacity="0.5" y="100" x="1680"></rect>
-				            <rect width="16" height="200" y="100" x="1708"></rect>
-				            <rect width="16" height="200" y="100" x="1736"></rect>
-				            <rect width="16" height="200" opacity="0.699999988" y="100" x="1764"></rect>
-				            <rect width="16" height="200" y="100" x="1792"></rect>
-				            <rect width="16" height="200" opacity="0.400000006" y="100" x="1820"></rect>
-				            <rect width="16" height="200" y="100" x="1848"></rect>
-				            <rect width="16" height="200" opacity="0.300000012" y="100" x="1876"></rect>
-				        </g>
-				    </g>
-				</g>
-			</svg>
-		</div>
-	</div>
-	<div class="layer layer5 dark">
-		<div class="wrapper">
-			<div class="banner wow move-up"></div>
-			<div class="container">
-				<div class="panel-title wowtmp fadeInUp">
-					<span class="number">05</span>
-					<span class="line"></span>
-					<span class="text">数据挖掘</span>
-				</div>
-				<div class="panel-content">
-					<div class="column">
-						<h3 class="panel-keyword wowtmp fadeInUp delay1">
-							人群画像 / 全局档案 / 身份识别 / 生活轨迹 / 预测预警
-						</h3>
-						<div class="panel-desc wowtmp fadeInUp delay2">
-							依托于丰富的数据资产和强大的技术能力，阿里集团对数据进行分析、挖掘并应用在实际业务中。通过算法，深度挖掘人群画像、生活轨迹、需求分析、识别路径轨迹等，并沉淀出一系列优质标签，为业务创新应用提供数据决策基础和依据。
-						</div>
-						<div class="panel-more wowtmp fadeInUp delay4">
-							<a target="_blank" href="https://alizs.taobao.com/">了解更多“阿里指数”</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="wave" class="editorial">
-			<div class="wave-line line1"></div>
-			<div class="wave-line line2"></div>
-		</div>
-	</div>
-	<div class="layer layer6">
-		<div class="wrapper">
-			<div class="container">
-				<div class="panel-title wowtmp fadeInUp">
-					<span class="number">06</span>
-					<span class="line"></span>
-					<span class="text">业务架构</span>
-				</div>
-				<div class="panel-content">
-					<div class="column">
-						<h3 class="panel-keyword wowtmp fadeInUp delay1">
-							标准 / 规范 / 流程 / 体系
-						</h3>
-						<div class="panel-desc wowtmp fadeInUp delay2">
-							一整套标准、规范、流程、体系，保障阿里数据运行和业务发展，为阿里生态系统带来新的动力
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="banner">
-				<div class="arrow-wrapper wow">
-					<ul>
-						<li class="arrow arrow1 act">
-							<span class="sprite sprite-arrow-light"></span>
-							<span class="sprite sprite-arrow-dark"></span>
-						</li>
-						<li class="arrow arrow2">
-							<span class="sprite sprite-arrow-light"></span>
-							<span class="sprite sprite-arrow-dark"></span>
-						</li>
-						<li class="arrow arrow3">
-							<span class="sprite sprite-arrow-light"></span>
-							<span class="sprite sprite-arrow-dark"></span>
-						</li>
-						<li class="arrow arrow4">
-							<span class="sprite sprite-arrow-light"></span>
-							<span class="sprite sprite-arrow-dark"></span>
-						</li>
-						<li class="arrow arrow5">
-							<span class="sprite sprite-arrow-light"></span>
-							<span class="sprite sprite-arrow-dark"></span>
-						</li>
-						<li class="arrow arrow6">
-							<span class="sprite sprite-arrow-light"></span>
-							<span class="sprite sprite-arrow-dark"></span>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="layer layer7 dark">
-		<div class="wrapper">
-			<div class="panel-title wowtmp fadeInUp">
-				<span class="number">07</span>
-				<span class="line"></span>
-				<span class="text">数据生态圈</span>
-			</div>
-			<div class="panel-content">
-				<div class="column">
-					<h3 class="panel-keyword wowtmp fadeInUp delay2">
-						开放 / 分享 / 赋能
-					</h3>
-					<div class="panel-desc wowtmp fadeInUp delay3">
-						以开放、分享的心态，将阿里在大数据上沉淀多年的经验和能力，赋予阿里外部千万用户和内部业务，帮助商家、中小创业者、传统企业等共同发展、繁荣
-					</div>
-				</div>
-			</div>
-
-			<svg width="1200" height="520" class="circle-lines">
-				 <defs>
-					<radialGradient id="grad">
-						<stop stop-color="#6D6DE2" offset="0"/>
-						<stop stop-color="#3B3BC2" offset="1"/>
-					</radialGradient>
-				</defs>
-
-				<g class="path-wrapper">
-					<path d="M556,0
-						A556,228,0 0 1, 1112, 228
-						A556,228,0 0 1, 556, 456
-						A556,228,0 0 1, 0, 228
-						A556,228,0 0 1, 556, 0" class="e-7" />
-					<path d="M1112,228
-						A556,228,0 0 1, 556, 456
-						A556,228,0 0 1, 0, 228
-						A556,228,0 0 1, 556, 0
-						A556,228,0 0 1, 1112, 228" class="e-6" />
-					<path d="M556,456
-						A556,228,0 0 1, 0, 228
-						A556,228,0 0 1, 556, 0
-						A556,228,0 0 1, 1112, 228
-						A556,228,0 0 1, 556,456" class="e-5" />
-
-					<path d="
-						M80,228
-						A477,187,0 0 1, 556,30
-						A477,187,0 0 1, 1033, 228
-						A477,187,0 0 1, 80, 228"
-						class="e-4" />
-
-					<path d="
-						M556,368
-						A410,156,0 0 1, 146,228
-						A410,156,0 0 1, 556, 55
-						A410,156,0 0 1, 966, 228
-						A410,156,0 0 1, 556, 368"
-						class="e-3" />
-
-					<path d="
-						M556,75
-						A354,133,0 0 1, 910,228
-						A354,133,0 0 1, 556, 340
-						A354,133,0 0 1, 202, 228
-						A354,133,0 0 1, 556, 75"
-						class="e-2" />
-
-					<path d="
-						M850,228
-						A299,107,0 0 1, 556,305
-						A299,107,0 0 1, 264, 228
-						A299,107,0 0 1, 556, 96
-						A299,107,0 0 1, 850, 228"
-						class="e-1" />
-				</g>
-
-
-			</svg>
-
-			<div class="earth"></div>
-		</div>
-	</div>
-
-	<!-- <div class="meeting">
-
-		<div class="wrapper">
-			<div class="header">
-				<span class="line"></span>
-				<h2 class="big-title">活动峰会</h2>
-				<span class="line"></span>
-			</div>
-			<ul>
-				<li class="box">
-					<img src="https://img.alicdn.com/tps/TB1yflENXXXXXXoXFXXXXXXXXXX-280-159.jpg" alt="">
-					<div class="title">第十五届互联网大会</div>
-					<div class="info">2016-05-10 杭州</div>
-				</li>
-				<li class="box">
-					<img src="https://img.alicdn.com/tps/TB1zhpoNXXXXXaKaXXXXXXXXXXX-280-159.jpg" alt="">
-					<div class="title">第十五届互联网大会</div>
-					<div class="info">2016-05-10 杭州</div>
-				</li>
-				<li class="box">
-					<img src="https://img.alicdn.com/tps/TB1yflENXXXXXXoXFXXXXXXXXXX-280-159.jpg" alt="">
-					<div class="title">第十五届互联网大会</div>
-					<div class="info">2016-05-10 杭州</div>
-				</li>
-				<li class="box">
-					<img src="https://img.alicdn.com/tps/TB1zhpoNXXXXXaKaXXXXXXXXXXX-280-159.jpg" alt="">
-					<div class="title">第十五届互联网大会</div>
-					<div class="info">2016-05-10 杭州</div>
-				</li>
-			</ul>
-			<div class="more"><a target="_blank" href="">查看更多</a></div>
-		</div>
-	</div> -->
-
-	<div class="footer">
-	    <div class="wrapper">
-	      <ul class="links-BU">
-	        <li><a target="_blank" href="https://www.alibabagroup.com/cn/global/home">阿里巴巴集团</a></li>
-	        <li><a target="_blank" href="https://www.taobao.com/">淘宝网</a></li>
-	        <li><a target="_blank" href="https://www.tmall.com/">天猫</a></li>
-	        <li><a target="_blank" href="https://ju.taobao.com">聚划算</a></li>
-	        <li><a target="_blank" href="https://www.aliexpress.com">全球速卖通</a></li>
-	        <li><a target="_blank" href="https://www.alibaba.com/">阿里巴巴国际交易市场</a></li>
-	        <li><a target="_blank" href="https://www.1688.com/">1688</a></li>
-	        <li><a target="_blank" href="https://www.alimama.com/">阿里妈妈</a></li>
-	        <li><a target="_blank" href="https://www.alitrip.com">阿里旅行去啊</a></li>
-	        <li><a target="_blank" href="https://www.aliyun.com">阿里云计算</a></li>
-	        <li><a target="_blank" href="https://www.yunos.com/">Yunos</a></li>
-	        <li><a target="_blank" href="https://www.aliqin.cn/">阿里通信</a></li>
-	        <li><a target="_blank" href="https://www.etao.com/">一淘</a></li>
-	        <li><a target="_blank" href="https://wanwang.aliyun.com">万网</a></li>
-	        <li><a target="_blank" href="https://www.autonavi.com/">高德</a></li>
-	        <li><a target="_blank" href="https://www.uc.cn/">uc</a></li>
-	        <li><a target="_blank" href="https://www.umeng.com/">友盟</a></li>
-	        <li><a target="_blank" href="https://www.xiami.com/">虾米</a></li>
-	        <li><a target="_blank" href="https://www.ttpod.com">阿里星球</a></li>
-	        <li><a target="_blank" href="https://www.ddchong.com/">来往</a></li>
-	        <li><a target="_blank" href="https://www.dingtalk.com/">钉钉</a></li>
-	        <li><a target="_blank" href="https://www.alipay.com/">支付宝</a></li>
-	        <li><a target="_blank" href="https://www.youku.com/">优酷</a></li>
-	        <li><a target="_blank" href="https://www.tudou.com/">土豆</a></li>
-	        <li><a target="_blank" href="https://www.alihealth.cn/">阿里健康</a></li>
-	        <li><a target="_blank" href="https://www.alibabapictures.com/">阿里影业</a></li>
-	        <li><a target="_blank" href="https://www.alisports.com/">阿里体育</a></li>
-	        <li><a target="_blank" href="https://www.mybank.cn">网商银行</a></li>
-	      </ul>
-	      <ul class="links-info">
-	        © 2003-2016 Taobao.com 版权所有
-	      </ul>
-
-	      <ul class="info-other">
-	        <li>网络文化经营许可证：浙网文[2013]0268-027号</li>
-	        <li>增值电信业务经营许可证：浙B2-20080224 </li>
-	        <li>信息网络传播视听节目许可证：1109364号</li>
-	        <li>互联网违法和不良信息举报电话:0571-81683755 blxx@list.alibaba-inc.com</li>
-	      </ul>
-	    </div>
-	</div>
-
-	<script src="src/home.js"></script>
-	<script src="src/home/TweenMax.min.js"></script>
-	<script src="src/home/data.js"></script>
-	<script src="src/home/earth.js"></script>
+  <script src="src/home.js"></script>
+  <script src="src/home/TweenMax.min.js"></script>
+  <script src="src/home/data.js"></script>
+  <script src="src/home/earth.js"></script>
 </body>
 </html>
