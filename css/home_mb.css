@@ -1,0 +1,682 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./animate.css);
+@import url(./common_mb.css);
+.home {
+  color: #fff; }
+  .home .layer {
+    padding: 70px 0; }
+  .home .layer2 {
+    background-color: #f4f4f4; }
+  .home .layer3 {
+    background: #0D1633; }
+  .home .layer4 {
+    background-color: #f4f4f4; }
+  .home .layer4-2 {
+    min-height: 260px;
+    background-color: #ffffff; }
+  .home .layer5 {
+    background-color: #0D1633; }
+  .home .layer6 {
+    background-color: #f4f4f4; }
+  .home .layer7 {
+    background: #0D1633;
+    overflow: hidden; }
+  .home .panel-content {
+    text-align: center;
+    padding: 0 15px; }
+  .home .panel-title {
+    color: #333;
+    padding-top: 10px;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px; }
+  .home .panel-keyword {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 7px; }
+  .home .panel-desc {
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.5);
+    line-height: 22px; }
+  .home .panel-more {
+    color: #0088fe;
+    font-size: 14px;
+    margin-top: 6px; }
+    .home .panel-more a {
+      color: #0088fe;
+      cursor: pointer;
+      text-decoration: none; }
+      .home .panel-more a:hover {
+        text-decoration: underline; }
+  .home .dark .panel-title {
+    color: white; }
+  .home .dark .panel-desc {
+    color: #ffffff;
+    opacity: 0.6; }
+  .home .dark .panel-more {
+    color: #FFBB28; }
+    .home .dark .panel-more a {
+      color: #FFBB28; }
+  .home .main-layer {
+    clear: both;
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+    .home .main-layer .banner-wrapper {
+      width: 200%; }
+    .home .main-layer .banner {
+      text-decoration: none;
+      display: block;
+      float: left;
+      width: 50%; }
+      .home .main-layer .banner img {
+        width: 100%; }
+    .home .main-layer .bg-0, .home .main-layer .bg-1 {
+      display: block; }
+    .home .main-layer .slideOut {
+      -webkit-animation: slide-out 1s 1;
+      -o-animation: slide-out 1s 1;
+      -moz-animation: slide-out 1s 1;
+      -ms-animation: slide-out 1s 1;
+      animation: slide-out 1s 1; }
+@-webkit-keyframes slide-out {
+  0% {
+    margin-left: 0; }
+  100% {
+    margin-left: -100%; } }
+@keyframes slide-out {
+  0% {
+    margin-left: 0; }
+  100% {
+    margin-left: -100%; } }
+  .home .foot-bar, .home .cards {
+    background-color: #f4f4f4;
+    padding: 10px 8px;
+    overflow: hidden; }
+    .home .foot-bar .row, .home .cards .row {
+      margin: 30px 0; }
+    .home .foot-bar .row-box, .home .cards .row-box {
+      float: left;
+      width: 48%;
+      color: #333;
+      padding: 0 5px;
+      box-sizing: border-box; }
+      .home .foot-bar .row-box:first-child, .home .cards .row-box:first-child {
+        width: 51%; }
+      .home .foot-bar .row-box .bar-item .iconfont, .home .cards .row-box .bar-item .iconfont {
+        font-size: 22px;
+        color: #0088FE;
+        display: inline-block;
+        margin-right: 5px; }
+      .home .foot-bar .row-box .bar-item .data-value, .home .cards .row-box .bar-item .data-value {
+        display: inline-block;
+        font-size: 22px; }
+      .home .foot-bar .row-box .data-text, .home .cards .row-box .data-text {
+        font-size: 12px;
+        margin-top: 5px;
+        color: #999;
+        line-height: 16px;
+        max-width: 180px; }
+    .home .foot-bar .clearfix, .home .cards .clearfix {
+      clear: both; }
+  .home .layer1 {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    clear: both; }
+    .home .layer1 .panel-content {
+      padding: 0 5px; }
+      .home .layer1 .panel-content a.iconfont {
+        color: #cecece;
+        float: left;
+        width: 12%;
+        text-decoration: none;
+        display: block;
+        height: 53px;
+        line-height: 70px;
+        font-size: 24px; }
+      .home .layer1 .panel-content .tabs {
+        float: left;
+        width: 76%;
+        min-height: 87px; }
+        .home .layer1 .panel-content .tabs .item {
+          display: none; }
+          .home .layer1 .panel-content .tabs .item:nth-child(1) {
+            display: block; }
+    .home .layer1 .banner {
+      clear: both;
+      z-index: -1;
+      position: relative; }
+      .home .layer1 .banner .img-group {
+        padding-top: 50px;
+        margin-left: 10px; }
+        .home .layer1 .banner .img-group img {
+          width: 100%;
+          display: none; }
+          .home .layer1 .banner .img-group img:nth-child(1) {
+            display: block; }
+      .home .layer1 .banner .circle-ripple {
+        background-color: rgba(176, 189, 255, 0.1);
+        width: 1px;
+        height: 1px;
+        -webkit-border-radius: 49%;
+        -moz-border-radius: 49%;
+        border-radius: 49%;
+        animation: ripple 1.5s linear infinite;
+        -webkit-animation: ripple 1.5s linear infinite;
+        -o-animation: ripple 1.5s linear infinite;
+        -moz-animation: ripple 1.5s linear infinite;
+        -ms-animation: ripple 1.5s linear infinite;
+        position: absolute;
+        left: 49%;
+        top: 45%; }
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(176, 189, 255, 0.2), 0 0 0 4em rgba(176, 189, 255, 0.2), 0 0 0 8em rgba(176, 189, 255, 0.2); }
+  100% {
+    box-shadow: 0 0 0 4em rgba(176, 189, 255, 0.2), 0 0 0 8em rgba(176, 189, 255, 0.2), 0 0 0 12em rgba(176, 189, 255, 0); } }
+@-webkit-keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(176, 189, 255, 0.2), 0 0 0 4em rgba(176, 189, 255, 0.2), 0 0 0 8em rgba(176, 189, 255, 0.2); }
+  100% {
+    box-shadow: 0 0 0 4em rgba(176, 189, 255, 0.2), 0 0 0 8em rgba(176, 189, 255, 0.2), 0 0 0 12em rgba(176, 189, 255, 0); } }
+  .home .layer2 .image {
+    width: 320px;
+    height: 230px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 40px; }
+    .home .layer2 .image .bg {
+      width: 100%;
+      height: 444px;
+      background: url("https://img.alicdn.com/tps/TB1PXMuMVXXXXbZapXXXXXXXXXX-648-444.png"); }
+    .home .layer2 .image #particle-line {
+      transform: scale(0.53) translateX(-266px) translateY(-198px);
+      -webkit-transform: scale(0.53) translateX(-266px) translateY(-198px);
+      -moz-transform: scale(0.53) translateX(-266px) translateY(-198px);
+      -o-transform: scale(0.53) translateX(-266px) translateY(-198px);
+      -ms-transform: scale(0.53) translateX(-266px) translateY(-198px); }
+  .home .layer3 {
+    padding-bottom: 30px; }
+    .home .layer3 .banner {
+      margin-top: 10px;
+      width: 90%;
+      margin: 0 auto; }
+      .home .layer3 .banner img {
+        width: 100%; }
+  .home .layer4 {
+    padding-bottom: 0; }
+    .home .layer4 .panel-content .sycm {
+      width: 106px;
+      height: 22px;
+      margin-bottom: 10px;
+      display: inline-block;
+      background: url(https://img.alicdn.com/tps/TB1MblOOVXXXXbrXXXXXXXXXXXX-290-60.png);
+      background-size: 106px 22px; }
+@-webkit-keyframes move-right {
+  0% {
+    right: 170px; }
+  100% {
+    right: 0px; } }
+@-webkit-keyframes move-left {
+  0% {
+    left: 170px; }
+  100% {
+    left: 0px; } }
+@keyframes move-right {
+  0% {
+    right: 170px; }
+  100% {
+    right: 0px; } }
+@keyframes move-left {
+  0% {
+    left: 170px; }
+  100% {
+    left: 0px; } }
+    .home .layer4 .banner {
+      margin-top: 50px;
+      text-align: center;
+      position: relative;
+      z-index: 0;
+      overflow: hidden; }
+      .home .layer4 .banner .img {
+        display: inline-block;
+        box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.15); }
+      .home .layer4 .banner .img-right {
+        z-index: -1;
+        bottom: 0;
+        right: 0px;
+        width: 30%;
+        position: absolute; }
+      .home .layer4 .banner .img-left {
+        z-index: -1;
+        bottom: 0;
+        left: 0px;
+        width: 30%;
+        position: absolute; }
+      .home .layer4 .banner .img-middle {
+        z-index: 1;
+        width: 70%;
+        margin-bottom: -2px; }
+      .home .layer4 .banner .animated.img-right {
+        animation: move-right 2s 1 forwards;
+        -webkit-animation: move-right 2s 1 forwards;
+        -ms-animation: move-right 2s 1 forwards;
+        -o-animation: move-right 2s 1 forwards;
+        -moz-animation: move-right 2s 1 forwards; }
+      .home .layer4 .banner .animated.img-left {
+        animation: move-left 2s 1 forwards;
+        -webkit-animation: move-left 2s 1 forwards;
+        -ms-animation: move-left 2s 1 forwards;
+        -o-animation: move-left 2s 1 forwards;
+        -moz-animation: move-left 2s 1 forwards; }
+  .home .layer4-2 {
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 0; }
+    .home .layer4-2 .panel-content {
+      text-align: center; }
+      .home .layer4-2 .panel-content .kmd {
+        width: 86px;
+        height: 30px;
+        margin-bottom: 10px;
+        display: inline-block;
+        background: url(https://gw.alicdn.com/tps/TB1y1M7OFXXXXb9aFXXXXXXXXXX-209-73.png);
+        background-size: 86px 30px; }
+@-webkit-keyframes moving-right {
+  0% {
+    left: 0; }
+  100% {
+    left: 6%; } }
+@-webkit-keyframes moving-left {
+  0% {
+    right: 0; }
+  100% {
+    right: 7%; } }
+@keyframes moving-right {
+  0% {
+    left: 0; }
+  100% {
+    left: 6%; } }
+@keyframes moving-left {
+  0% {
+    right: 0; }
+  100% {
+    right: 7%; } }
+    .home .layer4-2 .img-wrapper {
+      margin-top: 50px;
+      position: relative; }
+      .home .layer4-2 .img-wrapper .placeholder {
+        width: 75%;
+        visibility: hidden; }
+      .home .layer4-2 .img-wrapper .img {
+        position: absolute;
+        box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.15); }
+      .home .layer4-2 .img-wrapper .img2right {
+        z-index: 1;
+        width: 75%;
+        bottom: 0;
+        left: 6%; }
+      .home .layer4-2 .img-wrapper .img2left {
+        z-index: 2;
+        right: 7%;
+        bottom: 0;
+        width: 30%; }
+      .home .layer4-2 .img-wrapper .animated.img2right {
+        animation: moving-right 2s 1 forwards;
+        -webkit-animation: moving-right 2s 1 forwards;
+        -ms-animation: moving-right 2s 1 forwards;
+        -o-animation: moving-right 2s 1 forwards;
+        -moz-animation: moving-right 2s 1 forwards; }
+      .home .layer4-2 .img-wrapper .animated.img2left {
+        animation: moving-left 2s 1 forwards;
+        -webkit-animation: moving-left 2s 1 forwards;
+        -ms-animation: moving-left 2s 1 forwards;
+        -o-animation: moving-left 2s 1 forwards;
+        -moz-animation: moving-left 2s 1 forwards; }
+  .home .layer5 {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding-bottom: 0; }
+    .home .layer5 .container {
+      margin-bottom: 50px; }
+@-webkit-keyframes moving-up {
+  0% {
+    margin-top: 100px; }
+  100% {
+    margin-top: 0px; } }
+@keyframes moving-up {
+  0% {
+    margin-top: 100px; }
+  100% {
+    margin-top: 0px; } }
+    .home .layer5 .animated.move-up {
+      animation: moving-up 2s 1 forwards;
+      -webkit-animation: moving-up 2s 1 forwards;
+      -o-animation: moving-up 2s 1 forwards;
+      -moz-animation: moving-up 2s 1 forwards;
+      -ms-animation: moving-up 2s 1 forwards; }
+    .home .layer5 .banner-wrapper {
+      overflow: hidden;
+      position: relative; }
+    .home .layer5 .banner-placeholder {
+      visibility: hidden;
+      width: 85%;
+      margin-bottom: -3px; }
+    .home .layer5 .banner {
+      position: absolute;
+      left: 50%;
+      margin-left: -42.5%;
+      z-index: 1;
+      width: 85%;
+      margin-bottom: -3px;
+      box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.15); }
+    .home .layer5 .editorial {
+      display: block;
+      width: 100%;
+      height: 10em;
+      margin: 0; }
+  .home .layer6 {
+    z-index: 1;
+    position: relative;
+    text-align: center; }
+@-webkit-keyframes move-up2 {
+  0% {
+    margin-top: 0px; }
+  100% {
+    margin-top: 50px; } }
+@keyframes move-up2 {
+  0% {
+    margin-top: 0px; }
+  100% {
+    margin-top: 50px; } }
+    .home .layer6 .animated.move-up2 {
+      animation: move-up2 2s 1 forwards;
+      -webkit-animation: move-up2 2s 1 forwards;
+      -o-animation: move-up2 2s 1 forwards;
+      -moz-animation: move-up2 2s 1 forwards;
+      -ms-animation: move-up2 2s 1 forwards; }
+    .home .layer6 .banner-wrapper {
+      overflow: hidden;
+      position: relative; }
+    .home .layer6 .banner-placeholder {
+      visibility: hidden;
+      width: 100%;
+      padding-top: 50px; }
+    .home .layer6 .banner {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -50%;
+      width: 100%;
+      margin-top: 50px; }
+  .home .layer7 {
+    min-height: 350px;
+    /*
+    	共五个轨道，从 1-5 由小及大
+     */ }
+    .home .layer7 .banner {
+      position: relative;
+      width: 320px;
+      margin: 0 auto;
+      margin-top: 40px; }
+@keyframes orbit {
+  0% {
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg); }
+  100% {
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg); } }
+@-webkit-keyframes orbit {
+  0% {
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg); }
+  100% {
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg); } }
+@keyframes invert {
+  0% {
+    transform: rotateX(-90deg) rotateY(-360deg);
+    -webkit-transform: rotateX(-90deg) rotateY(-360deg);
+    -moz-transform: rotateX(-90deg) rotateY(-360deg);
+    -ms-transform: rotateX(-90deg) rotateY(-360deg);
+    -o-transform: rotateX(-90deg) rotateY(-360deg); }
+  100% {
+    transform: rotateX(-90deg) rotateY(0deg);
+    -webkit-transform: rotateX(-90deg) rotateY(0deg);
+    -moz-transform: rotateX(-90deg) rotateY(0deg);
+    -ms-transform: rotateX(-90deg) rotateY(0deg);
+    -o-transform: rotateX(-90deg) rotateY(0deg); } }
+@-webkit-keyframes invert {
+  0% {
+    transform: rotateX(-90deg) rotateY(-360deg);
+    -webkit-transform: rotateX(-90deg) rotateY(-360deg);
+    -moz-transform: rotateX(-90deg) rotateY(-360deg);
+    -ms-transform: rotateX(-90deg) rotateY(-360deg);
+    -o-transform: rotateX(-90deg) rotateY(-360deg); }
+  100% {
+    transform: rotateX(-90deg) rotateY(0deg);
+    -webkit-transform: rotateX(-90deg) rotateY(0deg);
+    -moz-transform: rotateX(-90deg) rotateY(0deg);
+    -ms-transform: rotateX(-90deg) rotateY(0deg);
+    -o-transform: rotateX(-90deg) rotateY(0deg); } }
+    .home .layer7 .galaxy {
+      top: 116px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform: rotateX(65deg);
+      -webkit-transform: rotateX(65deg);
+      -moz-transform: rotateX(65deg);
+      -ms-transform: rotateX(65deg);
+      -o-transform: rotateX(65deg);
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d; }
+    .home .layer7 .orbit {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      animation-name: orbit;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: orbit;
+      -moz-animation-name: orbit;
+      -ms-animation-name: orbit;
+      -o-animation-name: orbit;
+      -webkit-animation-timing-function: linear;
+      -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+      -o-animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite; }
+    .home .layer7 .planet {
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      border-radius: 50%;
+      animation-name: invert;
+      -webkit-animation-name: invert;
+      -moz-animation-name: invert;
+      -ms-animation-name: invert;
+      -o-animation-name: invert;
+      animation-timing-function: linear;
+      -webkit-animation-timing-function: linear;
+      -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+      -o-animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite; }
+    .home .layer7 .planet-name {
+      color: rgba(171, 205, 255, 0.8);
+      font-size: 10px;
+      position: absolute;
+      top: 20px;
+      white-space: nowrap; }
+    .home .layer7 .orbit1 .planet {
+      top: 100%;
+      left: 50%; }
+    .home .layer7 .orbit2 .planet-info {
+      top: 0;
+      right: 50%; }
+    .home .layer7 .orbit3 .planet {
+      right: -7.5px; }
+    .home .layer7 .orbit4 .planet {
+      top: 100%;
+      left: 50%; }
+    .home .layer7 .orbit5 .planet-media {
+      top: 0;
+      right: 50%; }
+    .home .layer7 .orbit1 .planet .planet-name {
+      left: -100%; }
+    .home .layer7 .orbit2 .planet-offline .planet-name {
+      left: -210%; }
+    .home .layer7 .orbit2 .planet-info .planet-name {
+      left: -100%; }
+    .home .layer7 .orbit3 .planet .planet-name {
+      left: -180%; }
+    .home .layer7 .orbit4 .planet .planet-name {
+      left: -120%; }
+    .home .layer7 .orbit5 .planet-media .planet-name {
+      left: -42%; }
+    .home .layer7 .orbit5 .planet-agency .planet-name {
+      left: -100%; }
+    .home .layer7 .orbit1, .home .layer7 .orbit1 .planet {
+      animation-duration: 47s;
+      -webkit-animation-duration: 47s;
+      -moz-animation-duration: 47s;
+      -ms-animation-duration: 47s;
+      -o-animation-duration: 47s; }
+    .home .layer7 .orbit2, .home .layer7 .orbit2 .planet {
+      animation-duration: 50s;
+      -webkit-animation-duration: 50s;
+      -moz-animation-duration: 50s;
+      -ms-animation-duration: 50s;
+      -o-animation-duration: 50s; }
+    .home .layer7 .orbit3, .home .layer7 .orbit3 .planet {
+      animation-duration: 49s;
+      -webkit-animation-duration: 49s;
+      -moz-animation-duration: 49s;
+      -ms-animation-duration: 49s;
+      -o-animation-duration: 49s; }
+    .home .layer7 .orbit4, .home .layer7 .orbit4 .planet {
+      animation-duration: 48s;
+      -webkit-animation-duration: 48s;
+      -moz-animation-duration: 48s;
+      -ms-animation-duration: 48s;
+      -o-animation-duration: 48s; }
+    .home .layer7 .orbit5, .home .layer7 .orbit5 .planet {
+      animation-duration: 50s;
+      -webkit-animation-duration: 50s;
+      -moz-animation-duration: 50s;
+      -ms-animation-duration: 50s;
+      -o-animation-duration: 50s; }
+    .home .layer7 .orbit1 .planet,
+    .home .layer7 .orbit2 .planet-offline,
+    .home .layer7 .orbit2 .planet-info,
+    .home .layer7 .orbit3 .planet,
+    .home .layer7 .orbit4 .planet,
+    .home .layer7 .orbit5 .planet-media,
+    .home .layer7 .orbit5 .planet-agency {
+      background: -webkit-radial-gradient(#6D6DE2, #3B3BC2);
+      background: -o-radial-gradient(#6D6DE2, #3B3BC2);
+      background: -moz-radial-gradient(#6D6DE2, #3B3BC2);
+      background: radial-gradient(#6D6DE2, #3B3BC2); }
+    .home .layer7 .orbit1 .planet {
+      width: 15px;
+      height: 15px;
+      margin-top: -7.5px;
+      margin-left: -7.5px; }
+    .home .layer7 .orbit2 .planet-offline {
+      width: 14px;
+      height: 14px;
+      margin-top: -7px;
+      margin-left: -7px; }
+    .home .layer7 .orbit2 .planet-info {
+      width: 17px;
+      height: 17px;
+      margin-top: -8.5px;
+      margin-left: -8.5px; }
+    .home .layer7 .orbit3 .planet {
+      width: 15px;
+      height: 15px;
+      margin-top: -7.5px;
+      margin-left: -7.5px; }
+    .home .layer7 .orbit4 .planet {
+      width: 17px;
+      height: 17px;
+      margin-top: -8.5px;
+      margin-left: -8.5px; }
+    .home .layer7 .orbit5 .planet-media {
+      width: 13px;
+      height: 13px;
+      margin-top: -6.5px;
+      margin-left: -6.5px; }
+    .home .layer7 .orbit5 .planet-agency {
+      width: 15px;
+      height: 15px;
+      margin-top: -7.5px;
+      margin-left: -7.5px; }
+    .home .layer7 .orbit1 {
+      width: 200px;
+      height: 200px;
+      margin-top: -100px;
+      margin-left: -100px; }
+    .home .layer7 .orbit2 {
+      width: 240px;
+      height: 240px;
+      margin-top: -120px;
+      margin-left: -120px; }
+    .home .layer7 .orbit3 {
+      width: 280px;
+      height: 280px;
+      margin-top: -140px;
+      margin-left: -140px; }
+    .home .layer7 .orbit4 {
+      width: 320px;
+      height: 320px;
+      margin-top: -160px;
+      margin-left: -160px; }
+    .home .layer7 .orbit5 {
+      width: 360px;
+      height: 360px;
+      margin-top: -180px;
+      margin-left: -180px; }
+    .home .layer7 .earth {
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      width: 50%;
+      margin-left: -23%;
+      z-index: 1; }
+
+/*# sourceMappingURL=home_mb.css.map */

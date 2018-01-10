@@ -1,0 +1,1 @@
+!function(){for(var a=$(".pic-list li"),b=0,c=0;c<a.length;c++){var d=$(a[c]),e=d.attr("data-link"),f=e.match(/\/(\w*).htm/);f=f&&f.length?f[0]:"",b<4&&window.location.pathname!=f?(b++,d.show()):d.hide()}}();

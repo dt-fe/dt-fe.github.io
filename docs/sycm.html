@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>生意参谋</title>
+	<link rel="stylesheet" href="../css/sycm.css">
+
+	<script src="../src/wow.js"></script>
+	<script type="text/javascript" src="http://g.alicdn.com/dt/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+
+<body class="sycm">
+	<div id="toTop">
+		<span class="iconfont">&#xe672;</span>
+	</div>
+	<div class="header-placeholder"></div>
+	<div class="header-wapper">
+		<div class="header">
+			<div class="logo"></div>
+			<div class="navigation">
+				<ul>
+					<li>
+						<a href="./index">
+							首页
+						</a>
+					</li>
+					<li>
+						<a class="act">
+							数据产品
+						</a>
+					</li>
+					<li>
+						<a href="./onedata">
+							OneData
+						</a>
+					</li>
+					<li>
+						<a href="./dv">
+							数据可视化
+						</a>
+					</li>
+					<!-- <li>
+						<a href="./submit">
+							活动峰会
+						</a>
+					</li> -->
+					<li>
+						<a href="./aboutus">
+							关于我们
+						</a>
+					</li>
+					<li>
+						<a href="./joinus">
+							加入我们
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="product-nav">
+		<div class="wrapper">
+			<ul>
+				<li>
+					<a class="act">生意参谋</a>
+				</li>
+				<li>
+					<a href="./kmd">孔明灯</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="layer main-layer">
+
+		<div class="bg" id="videoBG"></div>
+		<div class="play" id="videoPlay"></div>
+		<div class="video-wrapper">
+			<video width="100%" height="632" id="video" onClick="toggleVideo()">
+	  			<source src="http://cloud.video.taobao.com//play/u/2582405495/p/2/e/6/t/1/47068218.mp4" type="video/mp4" />
+				Your browser does not support the video tag.
+			</video>
+		</div>
+	</div>
+
+	<div class="layer layer1">
+		<div class="wrapper">
+			<div class="logo"></div>
+			<div class="panel-title">
+				阿里巴巴统一的商家数据产品平台
+			</div>
+			<div class="panel-desc">
+				打造商家一盘生意背后一盘数据的数据产品服务。基于全渠道数据融合、全链路数据产品集成，为商家提供数据披露、分析、诊断、建议、优化、预测等一站式数据产品服务。目前，服务的商家已经超过2000万，月服务商家超过600万；在月成交额30万元以上的商家中，逾90%在使用生意参谋。
+			</div>
+			<div class="panel-link">
+				<a target="_blank" href="https://sycm.taobao.com/">前往“生意参谋”官网</a>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="layer layer2">
+
+		<div class="wrapper">
+			<ul class="overview">
+				<li>
+					<div class="fl">
+						<span class="sprite sprite-users"></span>
+					</div>
+					<div class="fl">
+						<div class="title">
+							看自己
+						</div>
+						<span class="desc">
+							店铺经营全链路数据，一览无遗
+						</span>
+					</div>
+				</li>
+				<li>
+					<div class="fl">
+						<span class="sprite sprite-Shape"></span>
+					</div>
+					<div class="fl">
+						<div class="title">
+							看行业
+						</div>
+						<span class="desc">
+							纵观行业动态，抢占市场先机
+						</span>
+					</div>
+				</li>
+				<li>
+					<div class="fl">
+						<span class="sprite sprite-user"></span>
+					</div>
+					<div class="fl">
+						<div class="title">
+							看对手
+						</div>
+						<span class="desc">
+							精准定位对手，知己知彼百战不殆
+						</span>
+					</div>
+				</li>
+			</ul>
+
+			<ul class="navigation wow move-up">
+				<li class="act online">实时直播</li>
+				<li class="analyse">经营分析</li>
+				<li class="market">市场行情</li>
+				<li class="infor">竞争情报</li>
+				<li class="school">数据学院</li>
+			</ul>
+
+			<div class="board">
+				<ul>
+					<li class="act online"></li>
+					<li class="analyse"></li>
+					<li class="market"></li>
+					<li class="infor"></li>
+					<li class="school"></li>
+				</ul>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="layer layer3">
+		<div class="wrapper">
+			<ul class="list">
+				<li>
+					<span class="sprite sprite-unit"></span>
+					<div class="title">
+						统一
+					</div>
+					<span class="desc">
+						口径标准统一，计算全面准确，PC/无线多端联动
+					</span>
+				</li>
+					<span class="line"></span>
+
+				<li>
+					<span class="sprite sprite-quanwei"></span>
+					<div class="title">
+						权威
+					</div>
+					<span class="desc">
+						阿里官方全局数据支撑<br/>值得信懒
+					</span>
+				</li>
+					<span class="line"></span>
+
+				<li>
+					<span class="sprite sprite-quanqudao"></span>
+					<div class="title">
+						全渠道
+					</div>
+					<span class="desc">
+						线上线下，阿里内外
+						<br/>多渠道布局
+					</span>
+				</li>
+				<span class="line"></span>
+
+				<li>
+					<span class="sprite sprite-quanlianlu"></span>
+					<div class="title">
+						全链路
+					</div>
+					<span class="desc">
+						从商品企划到仓储物流<br/>
+						全链路覆盖
+					</span>
+				</li>
+			</ul>
+
+
+
+		</div>
+	</div>
+
+	<div class="layer layer4">
+		<div class="wrapper">
+
+			<div class="big-title">
+				生意参谋的前世今生
+			</div>
+
+			<div class="content-wrapper">
+				<ul class="timeline">
+					<li>
+						<span class="year">2016</span>
+						<span class="month">&nbsp;8月</span>
+					</li>
+					<li>
+						<span class="year">2015</span>
+						<span class="month">&nbsp;9月</span>
+					</li>
+					<li>
+						<span class="month">6月</span>
+					</li>
+					<li>
+						<span class="year">2014</span>
+						<span class="month">10月</span>
+					</li>
+					<li>
+						<span class="year">2013</span>
+						<span class="month">10月</span>
+					</li>
+					<li>
+						<span class="month">&nbsp;1月</span>
+					</li>
+					<li>
+						<span class="year">2011</span>
+						<span class="month">&nbsp;8月</span>
+					</li>
+				</ul>
+				<div class="img">
+
+				</div>
+				<svg
+					class="circle"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink">
+
+					<circle  cx="20" cy="20"/>
+				</svg>
+				<ul class="events">
+					<li>生意参谋 2.0 全新上线</li>
+					<li>推出市场行情、数据作战室等重要功能</li>
+					<li>整合数据魔方，成为商家业务数据化的主要承载地</li>
+					<li>携手量子恒道，依托阿里集团One Data整合升级为生意参谋平台</li>
+					<li>生意参谋走进淘系，开辟店铺经营分析新时代</li>
+					<li>生意参谋1688新版推出</li>
+					<li>生意参谋品牌成立，作为诚信通增值服务产品正式推出</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="layer layer5">
+		<div class="wrapper">
+
+			<div class="big-title">
+				生意参谋的未来规划
+			</div>
+
+			<ul>
+				<li>
+					<div class="box-header">
+						<span class="sprite sprite-icon-channel"></span>
+						<span class="title">全渠道</span>
+					</div>
+
+					<div class="content">
+						<div>
+							全渠道数据采集计算：阿里店内数据 → 阿里外电商数据 → 线下商业数据。
+						</div>
+						<div>
+							场景示例：店铺绑定授权，数据关联计算，跨平台多店业务实时预警监测和决策分析，店开到哪里，数据就到哪里。
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="box-header">
+						<span class="sprite sprite-icon-link"></span>
+						<span class="title">全链路</span>
+					</div>
+					<div class="content">
+						<div>
+							全链路数据采集计算：流量数据、商品数据、交易数据、服务数据、物流仓储数据、财务数据、会员画像等。
+						</div>
+						<div>
+							场景示例：服务全链路数据采集计算整合；服务质量指标体系构建；基于智能化服务数据监测调整改进。
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="box-header">
+						<span class="sprite sprite-icon-indiv"></span>
+						<span class="title">个性化&智能化</span>
+					</div>
+
+					<div class="content">
+						<div>
+							个性化&智能化：个性化业务场景诊断规划模型库，智能化业务决策动作推荐体系等。
+						</div>
+						<div>
+							场景示例：基于店铺的销售预测和现金流，推荐合适的金融手段，帮助商家更好的决策资金运作。
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<div class="button-wrapper">
+				<div class="button">
+					<a target="_blank" href="https://sycm.taobao.com/">前往生意参谋官网</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="layer layer6">
+		<div class="wrapper">
+			<div class="header">
+				<span class="line"></span>
+				<h2 class="big-title">合作伙伴</h2>
+				<span class="line"></span>
+			</div>
+			<ul class="list">
+				<li>
+					<div class="icon">
+						<span class="sprite sprite-1"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-2"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-3"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-4"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-5"></a>
+					</div>
+				</li>
+				<li>
+					<div class="icon">
+						<span class="sprite sprite-6"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-7"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-8"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-9"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-10"></a>
+					</div>
+				</li>
+				<li>
+					<div class="icon">
+						<span class="sprite sprite-11"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-12"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-13"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-14"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-15"></a>
+					</div>
+				</li>
+				<li>
+					<div class="icon">
+						<span class="sprite sprite-16"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-17"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-18"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-19"></a>
+					</div>
+					<div class="icon">
+						<span class="sprite sprite-20"></a>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="wrapper">
+			<ul class="links-BU">
+				<li><a target="_blank" href="http://www.alibabagroup.com/cn/global/home">阿里巴巴集团</a></li>
+				<li><a target="_blank" href="https://www.taobao.com/">淘宝网</a></li>
+				<li><a target="_blank" href="https://www.tmall.com/">天猫</a></li>
+				<li><a target="_blank" href="https://ju.taobao.com">聚划算</a></li>
+				<li><a target="_blank" href="https://www.aliexpress.com">全球速卖通</a></li>
+				<li><a target="_blank" href="https://www.alibaba.com/">阿里巴巴国际交易市场</a></li>
+				<li><a target="_blank" href="https://www.1688.com/">1688</a></li>
+				<li><a target="_blank" href="http://www.alimama.com/">阿里妈妈</a></li>
+				<li><a target="_blank" href="https://www.alitrip.com">阿里旅行去啊</a></li>
+				<li><a target="_blank" href="https://www.aliyun.com">阿里云计算</a></li>
+				<li><a target="_blank" href="http://www.yunos.com/">Yunos</a></li>
+				<li><a target="_blank" href="http://www.aliqin.cn/">阿里通信</a></li>
+				<li><a target="_blank" href="http://www.etao.com/">一淘</a></li>
+				<li><a target="_blank" href="https://wanwang.aliyun.com">万网</a></li>
+				<li><a target="_blank" href="http://www.autonavi.com/">高德</a></li>
+				<li><a target="_blank" href="http://www.uc.cn/">uc</a></li>
+				<li><a target="_blank" href="http://www.umeng.com/">友盟</a></li>
+				<li><a target="_blank" href="http://www.xiami.com/">虾米</a></li>
+				<li><a target="_blank" href="https://www.ttpod.com">阿里星球</a></li>
+				<li><a target="_blank" href="http://www.ddchong.com/">来往</a></li>
+				<li><a target="_blank" href="http://www.dingtalk.com/">钉钉</a></li>
+				<li><a target="_blank" href="https://www.alipay.com/">支付宝</a></li>
+				<li><a target="_blank" href="http://www.youku.com/">优酷</a></li>
+				<li><a target="_blank" href="http://www.tudou.com/">土豆</a></li>
+				<li><a target="_blank" href="http://www.alihealth.cn/">阿里健康</a></li>
+				<li><a target="_blank" href="http://www.alibabapictures.com/">阿里影业</a></li>
+				<li><a target="_blank" href="http://www.alisports.com/">阿里体育</a></li>
+				<li><a target="_blank" href="https://www.mybank.cn">网商银行</a></li>
+			</ul>
+			<ul class="links-info">
+				© 2003-2016 Taobao.com 版权所有
+			</ul>
+
+			<ul class="info-other">
+				<li>网络文化经营许可证：浙网文[2013]0268-027号</li>
+				<li>增值电信业务经营许可证：浙B2-20080224 </li>
+				<li>信息网络传播视听节目许可证：1109364号</li>
+				<li>互联网违法和不良信息举报电话:0571-81683755 blxx@list.alibaba-inc.com</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../src/sycm.js"></script>
+
+</body>
+</html>

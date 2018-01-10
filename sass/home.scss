@@ -1,0 +1,775 @@
+@import url(./reset.css);
+@import url(./animate.css);
+@import url(./common.css);
+
+.home{
+	color: #fff;
+
+	.layer2{
+		background-color: #fafafa;
+	}
+	.layer3{
+		background: #0D1633;
+	}
+	.layer4{
+		background-color: #fafafa;
+	}
+	.layer4-2{
+		background-color: #ffffff;
+	}
+	.layer5{
+		background-color: #0D1633;
+	}
+	.layer6{
+		background-color: #fafafa;
+		// background: url(../images/home/bg-layer-6.jpg) no-repeat center center;
+	}
+	.layer7{
+		background: #0D1633;
+	}
+
+	.panel-title{
+		color: #cecece;
+		margin-bottom: 20px;
+		.number{
+			font-size: 56px;
+		}
+		.line{
+			width: 1px;
+			height: 48px;
+			margin: 0 10px;
+			background: #cecece;
+			display: inline-block;
+			vertical-align: bottom;
+		}
+		.text{
+			font-size: 24px;
+		}
+	}
+	.panel-keyword{
+		color: #333;
+		font-size: 36px;
+		line-height: 52px;
+		margin-bottom: 16px;
+	}
+	.panel-desc{
+		font-size: 14px;
+		line-height: 22px;
+		color: rgba(51,51,51,0.5);
+	}
+	.panel-more{
+		color: #0088fe;
+		font-size: 14px;
+		margin-top: 10px;
+		a{
+			color: #0088fe;
+			cursor: pointer;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.dark .panel-title{ color: rgba(255,255,255,0.3); }
+	.dark .panel-title .line{ background: rgba(255,255,255,0.3); }
+	.dark .panel-keyword{ color: #ffffff; }
+	.dark .panel-desc{ color: #ffffff; opacity: 0.6; }
+	.dark .panel-more{
+		color: #FFBB28;
+		a{
+			color: #FFBB28;
+		}
+	}
+
+	.layer{
+		.wrapper{
+			padding-top: 180px;
+		}
+	}
+
+	.main-layer{
+		clear: both;
+		height: 800px;
+		width: 100%;
+		position: relative;
+
+		.main-layer-bg{
+			width: 100%;
+			padding-top: 0px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			height: 800px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			a{
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.bg-0{
+			display: block;
+			background-image: url(https://img.alicdn.com/tps/TB13hwUOXXXXXXtXVXXXXXXXXXX-1920-800.jpg);
+		}
+		.bg-1{
+			display: block;
+			background-image: url(https://img.alicdn.com/tps/TB1vLMFOFXXXXbrXFXXXXXXXXXX-1920-800.png);
+		}
+
+
+		.main-text{
+			display: none;
+
+			// clear: both;
+			// padding-top: 140px;
+			// text-align: center;
+			// .title{
+			// 	font-size: 44px;
+			// 	margin-bottom: 0.3em;
+			// }
+			// .introduction{
+			// 	height: 66px;
+			// 	font-size: 14px;
+			// 	line-height: 22px;
+			// }
+		}
+	}
+
+	.foot-bar{
+		display: none;
+		height: 180px;
+		margin-top: -180px;
+		background-color: rgba(27,26,51,0.8);
+
+		.wrapper{
+			display: flex;
+			display: -webkit-flex; /* Safari */
+			justify-content: space-between;
+		}
+		.left{
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
+		}
+		.middle{
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
+		}
+		.right{
+			-webkit-flex: 0 1 auto;
+			flex: 0 1 auto;
+		}
+
+		.bar-column{
+
+			.bar-group{
+				margin: 1.6em 0;
+				overflow: hidden;
+				.sprite{
+					float: left;
+					margin-top: 2px;
+					margin-right: 18px;
+				}
+				.bar-item{
+					float: left;
+					.data-value{
+						font-size: 28px;
+					}
+					.data-text{
+						font-size: 14px;
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.layer1{
+		overflow: hidden;
+		position: relative;
+		.column{
+			float: left;
+			width: 280px;
+			margin-right: 35px;
+			.item{
+				float: left;
+				width: 280px;
+				margin-bottom: 40px;
+			}
+		}
+		.banner{
+			right: 0;
+			width: 917px;
+			height: 917px;
+			position: absolute;
+			margin-top: -98px;
+
+			.img{
+				top: 70px;
+				right: 51px;
+				width: 793px;
+				height: 793px;
+				position: absolute;
+				z-index: -1;
+				background: url(https://img.alicdn.com/tps/TB1qAe3NXXXXXavXVXXXXXXXXXX-793-793.png) no-repeat ;
+			}
+
+			@keyframes circle-b-zoom{
+				0% { r: 0; opacity: 1;}
+				100% { r: 400; opacity: 0;}
+			}
+			.circle{
+				r: 0;
+				fill: rgba(176,189,255,0.2);
+				animation:circle-b-zoom 10s infinite;
+				-webkit-animation:circle-b-zoom 10s infinite;
+				-ms-animation:circle-b-zoom 10s infinite;
+			}
+			.circle-m{
+				animation-delay: 2s;
+				-webkit-animation-delay: 2s;
+				-ms-animation-delay: 2s;
+			}
+			.circle-b{
+				animation-delay: 4s;
+				-webkit-animation-delay: 4s;
+				-ms-animation-delay: 4s;
+			}
+			.circle-b2{
+				animation-delay: 6s;
+				-webkit-animation-delay: 6s;
+				-ms-animation-delay: 6s;
+			}
+			.circle-b3{
+				animation-delay: 8s;
+				-webkit-animation-delay: 8s;
+				-ms-animation-delay: 8s;
+			}
+		}
+
+	}
+	.layer2{
+		.wrapper{
+			padding-top: 130px;
+		}
+		.container{
+			float: right;
+		}
+		.panel-title{
+			padding-top: 30px;
+		}
+		.image{
+			width: 648px;
+			height: 444px;
+			float: left;
+			.bg{
+				width: 648px;
+				height: 444px;
+				background: url("https://img.alicdn.com/tps/TB1PXMuMVXXXXbZapXXXXXXXXXX-648-444.png");
+			}
+
+			#particle-line{
+				// border: 1px #000 solid;
+			}
+
+		}
+		.column{
+			width: 520px;
+		}
+	}
+	.layer3{
+		.wrapper{
+			padding: 243px 0;
+		}
+		.column{
+			width: 452px;
+		}
+		.banner{
+			width: 530px;
+			height: 502px;
+			float: right;
+			margin-top: -153px;
+			margin-right: 11px;
+			background: url(https://img.alicdn.com/tps/TB1.grSNpXXXXX0apXXXXXXXXXX-530-502.jpg);
+		}
+	}
+	.layer4{
+		.wrapper{
+			position: relative;
+			padding-top: 80px;
+		}
+		.panel-title{
+			padding-top: 10px;
+			position: absolute;
+		}
+
+		.panel-content{
+			text-align: center;
+			.panel-desc{
+				width: 720px;
+				display: inline-block;
+			}
+			.sycm{
+				width: 122px;
+				height: 30px;
+				margin-bottom: 10px;
+				display: inline-block;
+				background: url(https://img.alicdn.com/tps/TB1U6EqMVXXXXcCXXXXXXXXXXXX-122-30.png);
+			}
+		}
+
+		@keyframes move-right{
+			0% { right: 170px; }
+			100% { right: 0px; }
+		}
+		@keyframes move-left{
+			0% { left: 170px; }
+			100% { left: 0px; }
+		}
+
+		.banner{
+			margin-top: 80px;
+			text-align: center;
+			.img{
+				display: inline-block;
+				box-shadow: 0px 20px 60px rgba(0,0,0,0.15);
+			}
+			.img-right{
+				bottom: 0;
+				right: 0px;
+				width: 282px;
+				height: 290px;
+				position: absolute;
+				background: url(https://img.alicdn.com/tps/TB1Wj8DNVXXXXbmaXXXXXXXXXXX-283-290.jpg);
+			}
+			.img-left{
+				bottom: 0;
+				left: 0px;
+				width: 279px;
+				height: 296px;
+				position: absolute;
+				background: url(https://img.alicdn.com/tps/TB1YVtENVXXXXb7aXXXXXXXXXXX-279-296.jpg);
+			}
+			.img-middle{
+				z-index: 1;
+				width: 640px;
+				height: 370px;
+				position: relative;
+				    margin-top: 1px;
+				background: url(https://img.alicdn.com/tps/TB1foFZNVXXXXcYXpXXXXXXXXXX-640-370.jpg);
+			}
+
+			.animated.img-right{
+				animation: move-right 2s 1 forwards;
+				-webkit-animation: move-right 2s 1 forwards;
+			}
+
+			.animated.img-left{
+				animation: move-left 2s 1 forwards;
+				-webkit-animation: move-left 2s 1 forwards;
+			}
+		}
+	}
+	.layer4-2{
+		z-index: 2;
+		overflow: hidden;
+		position: relative;
+		.wrapper{
+			position: relative;
+			padding-top: 70px;
+		}
+		.panel-content{
+			text-align: center;
+			.panel-desc{
+				width: 780px;
+				display: inline-block;
+			}
+			.kmd{
+				width: 92px;
+				height: 33px;
+				margin-bottom: 10px;
+				display: inline-block;
+				background: url(https://img.alicdn.com/tps/TB1mwrZMVXXXXclapXXXXXXXXXX-92-33.png);
+			}
+		}
+
+		@keyframes moving-right{
+			0% { right: 180px; }
+			100% { right: 150px; }
+		}
+		@keyframes moving-left{
+			0% { left: 160px; }
+			100% { left: 130px; }
+		}
+		.img-wrapper{
+			position: relative;
+
+			.img{
+				position: absolute;
+				display: inline-block;
+				box-shadow: 0px 20px 60px rgba(0,0,0,0.15);
+			}
+			.img2right{
+				z-index: 2;
+				top: 161px;
+				width: 230px;
+				right: 150px;
+				height: 308px;
+				background: url(https://img.alicdn.com/tps/TB1qly7NXXXXXcWXXXXXXXXXXXX-230-334.png);
+			}
+			.img2left{
+				z-index: 1;
+				top: 71px;
+				left: 130px;
+				width: 750px;
+				height: 398px;
+				background: url(https://img.alicdn.com/tps/TB1T9KwNXXXXXbbapXXXXXXXXXX-750-398.jpg);
+			}
+
+			.animated.img2right{
+				animation: moving-right 2s 1 forwards;
+				-webkit-animation: moving-right 2s 1 forwards;
+			}
+			.animated.img2left{
+				animation: moving-left 2s 1 forwards;
+				-webkit-animation: moving-left 2s 1 forwards;
+			}
+		}
+
+		.banner{
+			margin-top: 469px;
+			// overflow: hidden;
+			text-align: center;
+			position: relative;
+
+			.bar{
+				left: 0;
+				bottom: 0;
+				position: absolute;
+				rect{
+					width: 16px;
+					height: 200px;
+				}
+			}
+		}
+	}
+	.layer5{
+		overflow: hidden;
+		position: relative;
+		.wrapper{
+			margin: 0 auto;
+			width: 1200px;
+		}
+		.container{
+			float: left;
+			margin-top: 50px;
+			margin-left: 60px;
+			// margin-right: 117px;
+		}
+		.column{
+			width: 540px;
+		}
+		@keyframes moving-up{
+			0% { margin-top: 200px; }
+			100% { margin-top: 56px; }
+		}
+		.animated.move-up{
+			animation: moving-up 2s 1 forwards;
+			-webkit-animation: moving-up 2s 1 forwards;
+		}
+		.banner{
+			z-index: 1;
+			float: left;
+			width: 600px;
+			height: 537px;
+			margin-top: 56px;
+			position: relative;
+			background-size: 600px 537px;
+			box-shadow: 0px 20px 60px rgba(0,0,0,0.15);
+			background-image: url(https://img.alicdn.com/tps/TB1Uz0tNpXXXXcmaXXXXXXXXXXX-694-621.png);
+		}
+		#wave{
+			bottom: -20px;
+			position: absolute;
+		}
+
+		.wave-line{
+			width: 3840px;
+			height: 157px;
+			position: absolute;
+		}
+		.line1{
+			margin-left: -1920px;
+			animation:move-forever 45s linear infinite;
+			background: url(https://img.alicdn.com/tps/TB1in3wNXXXXXacapXXXXXXXXXX-3840-144.png);
+		}
+		.line2{
+			margin-top: 30px;
+			animation:move-forever2 30s linear infinite;
+			background: url(https://img.alicdn.com/tps/TB1rEEANXXXXXbGaXXXXXXXXXXX-3840-144.png);
+		}
+
+		@keyframes move-forever{
+		  0%{margin-left: -1920px;}
+		  100%{margin-left: 0px;}
+		}
+		@keyframes move-forever2{
+		  0%{margin-left: 0px;}
+		  100%{margin-left: -1920px;}
+		}
+
+		.editorial {
+		  display: block;
+		  width: 100%;
+		  height: 10em;
+		  margin: 0;
+		}
+		.wave-line{
+			fill:url(#wave-color);
+		}
+
+
+	}
+	.layer6{
+		z-index: 1;
+		position: relative;
+		.wrapper{
+			padding-top: 107px;
+		}
+		.banner{
+			float: left;
+			width: 756px;
+			height: 526px;
+			position: relative;
+			background-image: url(https://img.alicdn.com/tps/TB1oyKkNpXXXXbOXpXXXXXXXXXX-756-526.png);
+		}
+		.container{
+			float: left;
+			margin-top: 153px;
+			margin-right: 40px;
+		}
+		.panel-desc{
+			width: 306px;
+		}
+		.arrow-wrapper{
+			.arrow{
+				position: absolute;
+			}
+			.arrow1{
+				top: 120px;
+				left: 216px;
+			}
+			.arrow2{
+				top: 120px;
+				left: 369px;
+			}
+			.arrow3{
+				top: 120px;
+				left: 483px;
+			}
+			.arrow4{
+				top: 235px;
+				right: 120px;
+				transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+			}
+			.arrow5{
+				top: 389px;
+				right: 249px;
+				transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+			}
+			.arrow6{
+				top: 235px;
+				left: 119px;
+				transform: rotate(270deg);
+				-ms-transform: rotate(270deg);
+			}
+
+			.sprite{
+			}
+			.sprite-arrow-dark{
+				display: none;
+			}
+			.act{
+				.sprite-arrow-light{ display: none; }
+				.sprite-arrow-dark{ display: inline-block; }
+			}
+		}
+	}
+	.layer7{
+		position: relative;
+		.wrapper{
+			padding-top: 249px;
+		}
+		.column{
+			width: 340px;
+		}
+
+		.circle-lines{
+			right: 42px;
+			bottom: 64px;
+			position: absolute;
+			transform: translate(40px,37px);
+			-ms-transform: translate(40px,37px);
+
+			.path-wrapper{
+				transform: translate(49px,24px);
+				-ms-transform: translate(49px,24px);
+			}
+
+			path{
+				stroke: #fff;
+				stroke-width: 1px;
+				opacity: 0.1;
+				fill: none;
+			}
+			path.e-7,path.e-6{opacity: 0;}
+
+			text{
+				fill: #ABCDFF;
+				font-size: 14px;
+			}
+		}
+		.earth{
+			top: 112px;
+			right: 364px;
+			width: 426px;
+			height: 424px;
+			position: absolute;
+			background: url("https://img.alicdn.com/tps/TB1u0FeNXXXXXc.aXXXXXXXXXXX-426-424.png");
+		}
+	}
+
+	.meeting{
+		background: #f8f8f8;
+		.wrapper{
+			padding: 72px 0;
+		}
+		.header{
+			text-align:center;
+			margin-bottom: 40px;
+
+			.line{
+				height: 1px;
+				width: 120px;
+				background: #cecece;
+				display: inline-block;
+				margin: 0 10px;
+			}
+
+			.big-title{
+				color: #333333;
+				font-size: 36px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+		.box{
+			float: left;
+			width: 280px;
+			height: 214px;
+			margin-right: 25px;
+			background: #ffffff;
+			margin-bottom: 30px;
+			box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+
+			&:last-child{
+				margin-right: 0px;
+			}
+
+			img{
+				width: 280px;
+				height: 158px;
+				background: #eee;
+				margin-bottom: 15px;
+				border: none;
+			}
+
+			.title{
+				color: #333;
+				font-size: 12px;
+				margin-left: 15px;
+			}
+			.info{
+				color: #999;
+				font-size: 12px;
+				margin-top: 7px;
+				margin-left: 15px;
+			}
+		}
+		.more{
+			clear: both;
+			text-align: center;
+
+			a{
+				color:#0088fe;
+				font-size:14px;
+				cursor: pointer;
+				text-decoration: none;
+			}
+		}
+	}
+
+	#three-container {
+		position: absolute;
+		width: 800px;
+		height: 800px;
+		margin-top: -290px;
+		margin-left: 538px;
+	}
+}
+
+.sprite {
+	background-image: url(https://img.alicdn.com/tps/TB14JSbNpXXXXXDXXXXXXXXXXXX-106-85.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.sprite-arrow-dark {
+    width: 26px;
+    height: 8px;
+    background-position: -5px -5px;
+}
+
+.sprite-arrow-light {
+    width: 26px;
+    height: 8px;
+    background-position: -41px -5px;
+}
+
+.sprite-box {
+    width: 24px;
+    height: 25px;
+    background-position: -5px -23px;
+}
+
+.sprite-chart {
+    width: 25px;
+    height: 23px;
+    background-position: -39px -23px;
+}
+
+.sprite-home {
+    width: 24px;
+    height: 24px;
+    background-position: -39px -56px;
+}
+
+.sprite-store {
+    width: 24px;
+    height: 27px;
+    background-position: -77px -5px;
+}
+
+.sprite-time {
+    width: 24px;
+    height: 24px;
+    background-position: -74px -42px;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>数据可视化</title>
+  <link rel="stylesheet" href="../css/dv.css">
+  <script type="text/javascript" src="http://g.alicdn.com/dt/libs/threejs/0.76.0/three.min.js"></script>
+  <script type="text/javascript" src="http://g.alicdn.com/dt/libs/d3/3.5.17/d3.min.js"></script>
+  <script type="text/javascript" src="http://g.alicdn.com/dt/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://g.alicdn.com/dt/libs/anime/1.0.0/anime.js"></script>
+  <script type="text/javascript" src="http://g.alicdn.com/dt/libs/threed/OrbitControls.js"></script>
+  <script type="text/javascript" src="http://g.alicdn.com/dt/libs/threed/Tween.js"></script>
+</head>
+
+<body class="dv">
+  <div class="header-placeholder"></div>
+  <div class="header-wapper">
+    <div class="header">
+      <div class="logo"></div>
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="./index">
+              首页
+            </a>
+          </li>
+          <li>
+            <a href="./sycm">
+              数据产品
+            </a>
+          </li>
+          <li>
+            <a href="./onedata">
+              OneData
+            </a>
+          </li>
+          <li>
+            <a class="act">
+              数据可视化
+            </a>
+          </li>
+          <!-- <li>
+            <a href="./submit">
+              活动峰会
+            </a>
+          </li> -->
+          <li>
+            <a href="./aboutus">
+              关于我们
+            </a>
+          </li>
+          <li>
+            <a href="./joinus">
+              加入我们
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="layer layer1">
+    <div class="wrapper">
+      <div class="static-earth"></div>
+      <div class="main-text">
+        <h1 class="title wow zoomIn">
+          感受大数据的心跳
+        </h1>
+        <div class="introduction">
+          <div class="wow fadeInUp delay1">数据可视化，利用最新的web端技术，2D、2.5D、3D自由发挥，大规模数据量绘制，</div>
+          <div class="wow fadeInUp delay2">借助图形化手段，清晰有效的传达数据的意义</div>
+        </div>
+      </div>
+    </div>
+    <div id="three-container"></div>
+  </div>
+  <div class="layer layer5">
+    <div class="wrapper">
+      <div class="main-text">
+        <h1 class="title">
+          “阿里数据”的数据可视化
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="layer layer2">
+    <div class="wrapper">
+      <div class="main-text">
+        <h1 class="title wow zoomIn">
+          2016深圳大运体育馆“双11”媒体直播大屏
+        </h1>
+        <div class="introduction">
+          <div class="wow fadeInUp delay1">实时数据可视化技术，保障数据准确、实时、清晰、震撼
+          </div>
+        </div>
+      </div>
+      <embed src="http://cloud.video.taobao.com//play/u/2582405495/p/2/e/1/t/1/47055446.swf" quality="high" width="100%" height="100%" align="middle" allowScriptAccess="never" allowFullScreen="true" type="application/x-shockwave-flash"></embed>
+    </div>
+  </div>
+  <div class="layer layer3">
+    <div class="wrapper">
+      <div class="main-text">
+        <h1 class="title wow zoomIn">
+          2.5D地图技术
+        </h1>
+        <div class="introduction">
+          <div class="wow fadeInUp delay1">
+          将传统地图转化为2.5D地图的方式，结合3D飞线来展现国家间实时贸易情况
+          </div>
+        </div>
+      </div>
+      <embed src="http://vodcdn.video.taobao.com/player/ugc/tb_ugc_bytes_core_player_loader.swf?version=1.0.20160613&vid=44438991&uid=2582405495&p=1&t=1&rid=&random=6666&autoplay=false" quality="high" width="100%" height="100%" align="middle" allowScriptAccess="never" allowFullScreen="true" type="application/x-shockwave-flash"></embed>
+    </div>
+  </div>
+  <div class="layer layer4">
+    <div class="wrapper">
+      <div class="main-text">
+        <h1 class="title wow zoomIn">
+          可视化大屏背后的核心技术架构
+        </h1>
+      </div>
+      <div class="constructor">
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="wrapper">
+      <ul class="links-BU">
+        <li><a href="http://www.alibabagroup.com/cn/global/home">阿里巴巴集团</a></li>
+        <li><a href="https://www.taobao.com/">淘宝网</a></li>
+        <li><a href="https://www.tmall.com/">天猫</a></li>
+        <li><a href="https://ju.taobao.com">聚划算</a></li>
+        <li><a href="https://www.aliexpress.com">全球速卖通</a></li>
+        <li><a href="https://www.alibaba.com/">阿里巴巴国际交易市场</a></li>
+        <li><a href="https://www.1688.com/">1688</a></li>
+        <li><a href="http://www.alimama.com/">阿里妈妈</a></li>
+        <li><a href="https://www.alitrip.com">阿里旅行去啊</a></li>
+        <li><a href="https://www.aliyun.com">阿里云计算</a></li>
+        <li><a href="http://www.yunos.com/">Yunos</a></li>
+        <li><a href="http://www.aliqin.cn/">阿里通信</a></li>
+        <li><a href="http://www.etao.com/">一淘</a></li>
+        <li><a href="https://wanwang.aliyun.com">万网</a></li>
+        <li><a href="http://www.autonavi.com/">高德</a></li>
+        <li><a href="http://www.uc.cn/">uc</a></li>
+        <li><a href="http://www.umeng.com/">友盟</a></li>
+        <li><a href="http://www.xiami.com/">虾米</a></li>
+        <li><a href="https://www.ttpod.com">阿里星球</a></li>
+        <li><a href="http://www.ddchong.com/">来往</a></li>
+        <li><a href="http://www.dingtalk.com/">钉钉</a></li>
+        <li><a href="https://www.alipay.com/">支付宝</a></li>
+        <li><a href="http://www.youku.com/">优酷</a></li>
+        <li><a href="http://www.tudou.com/">土豆</a></li>
+        <li><a href="http://www.alihealth.cn/">阿里健康</a></li>
+        <li><a href="http://www.alibabapictures.com/">阿里影业</a></li>
+        <li><a href="http://www.alisports.com/">阿里体育</a></li>
+        <li><a href="https://www.mybank.cn">网商银行</a></li>
+      </ul>
+      <ul class="links-info">
+        © 2003-2016 Taobao.com 版权所有
+      </ul>
+
+      <ul class="info-other">
+        <li>网络文化经营许可证：浙网文[2013]0268-027号</li>
+        <li>增值电信业务经营许可证：浙B2-20080224 </li>
+        <li>信息网络传播视听节目许可证：1109364号</li>
+        <li>互联网违法和不良信息举报电话:0571-81683755 blxx@list.alibaba-inc.com</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../src/dv/data.js"></script>
+  <script src="../src/dv/dv.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+!function(a){a(".jq-xixi .title").click(function(){a(this).find(".sprite").toggleClass("sprite-up").toggleClass("sprite-down"),a(".jq-xixi .content").toggle(),a("svg.xixi .big").toggle()}),a(".jq-bj .title").click(function(){a(this).find(".sprite").toggleClass("sprite-up").toggleClass("sprite-down"),a(".jq-bj .content").toggle(),a("svg.bj").toggle()})}(jQuery);

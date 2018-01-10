@@ -1,0 +1,279 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'iconfont';
+  /* project id 37933 */
+  src: url("//at.alicdn.com/t/font_1qsrlgvnn11kmx6r.eot");
+  src: url("//at.alicdn.com/t/font_1qsrlgvnn11kmx6r.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1qsrlgvnn11kmx6r.woff") format("woff"), url("//at.alicdn.com/t/font_1qsrlgvnn11kmx6r.ttf") format("truetype"), url("//at.alicdn.com/t/font_1qsrlgvnn11kmx6r.svg#iconfont") format("svg"); }
+.iconfont {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "iconfont"; }
+
+body {
+  font-family: 'Microsoft YaHei','微软雅黑', MicrosoftYaHei ,'STHeiti Light','STXihei','Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+#toTop {
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  z-index: 9998;
+  display: none;
+  bottom: 10px;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  opacity: 0.9;
+  border: 1px solid #cecece;
+  line-height: 42px;
+  text-align: center; }
+  #toTop .iconfont {
+    font-size: 25px;
+    color: #999; }
+
+.delay1 {
+  animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s; }
+
+.delay2 {
+  animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s; }
+
+.delay3 {
+  animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s; }
+
+.delay4 {
+  animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s; }
+
+.delay5 {
+  animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s; }
+
+.delay6 {
+  animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s; }
+
+.delay7 {
+  animation-delay: 0.7s;
+  -ms-animation-delay: 0.7s; }
+
+.delay8 {
+  animation-delay: 0.8s;
+  -ms-animation-delay: 0.8s; }
+
+.delay9 {
+  animation-delay: 0.9s;
+  -ms-animation-delay: 0.9s; }
+
+.delay10 {
+  animation-delay: 1s;
+  -ms-animation-delay: 1s; }
+
+.delay11 {
+  animation-delay: 1.1s;
+  -ms-animation-delay: 1.1s; }
+
+.delay12 {
+  animation-delay: 1.2s;
+  -ms-animation-delay: 1.2s; }
+
+.delay13 {
+  animation-delay: 1.3s;
+  -ms-animation-delay: 1.3s; }
+
+.delay14 {
+  animation-delay: 1.4s;
+  -ms-animation-delay: 1.4s; }
+
+.delay15 {
+  animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s; }
+
+.delay16 {
+  animation-delay: 1.6s;
+  -ms-animation-delay: 1.6s; }
+
+.delay17 {
+  animation-delay: 1.7s;
+  -ms-animation-delay: 1.7s; }
+
+.delay18 {
+  animation-delay: 1.8s;
+  -ms-animation-delay: 1.8s; }
+
+.delay19 {
+  animation-delay: 1.9s;
+  -ms-animation-delay: 1.9s; }
+
+.delay20 {
+  animation-delay: 2s;
+  -ms-animation-delay: 2s; }
+
+.delay21 {
+  animation-delay: 2.1s;
+  -ms-animation-delay: 2.1s; }
+
+.delay22 {
+  animation-delay: 2.2s;
+  -ms-animation-delay: 2.2s; }
+
+.delay23 {
+  animation-delay: 2.3s;
+  -ms-animation-delay: 2.3s; }
+
+.delay24 {
+  animation-delay: 2.4s;
+  -ms-animation-delay: 2.4s; }
+
+.delay25 {
+  animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s; }
+
+.delay26 {
+  animation-delay: 2.6s;
+  -ms-animation-delay: 2.6s; }
+
+.delay27 {
+  animation-delay: 2.7s;
+  -ms-animation-delay: 2.7s; }
+
+.delay28 {
+  animation-delay: 2.8s;
+  -ms-animation-delay: 2.8s; }
+
+.delay29 {
+  animation-delay: 2.9s;
+  -ms-animation-delay: 2.9s; }
+
+.delay30 {
+  animation-delay: 3s;
+  -ms-animation-delay: 3s; }
+
+.fr {
+  float: right; }
+
+.fl {
+  float: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.layer {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.wrapper {
+  margin: 0 auto; }
+
+.navigation-placeholder {
+  height: 48px; }
+
+.navigation {
+  top: 0;
+  z-index: 11;
+  width: 100%;
+  height: 48px;
+  position: fixed;
+  background-color: #1B1D26;
+  color: #fff;
+  text-align: center;
+  line-height: 48px; }
+  .navigation .nav-title {
+    position: absolute;
+    left: 50%;
+    width: 80px;
+    text-align: center;
+    margin-left: -40px; }
+  .navigation .logo {
+    float: left;
+    width: 105px;
+    height: 48px;
+    line-height: 40px;
+    cursor: default;
+    text-decoration: none; }
+    .navigation .logo .logo-icon {
+      width: 27px;
+      margin-top: 5px;
+      vertical-align: middle; }
+    .navigation .logo .logo-title {
+      width: 60px;
+      margin-left: -5px;
+      vertical-align: middle;
+      margin-top: 4px; }
+    .navigation .logo:hover {
+      cursor: default;
+      text-decoration: none; }
+  .navigation .btn-menu {
+    float: right;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 10px; }
+    .navigation .btn-menu:hover {
+      color: #eee; }
+  .navigation .menu {
+    display: none;
+    clear: both;
+    background-color: #1B1D26; }
+    .navigation .menu .sub-menu li:first-child a {
+      margin-left: 20px;
+      margin-right: 20px; }
+      .navigation .menu .sub-menu li:first-child a .name {
+        padding-left: 0px; }
+      .navigation .menu .sub-menu li:first-child a .iconfont {
+        padding-right: 0px; }
+    .navigation .menu li {
+      overflow: hidden;
+      clear: both; }
+      .navigation .menu li:first-child a {
+        margin-left: 0;
+        margin-right: 0; }
+        .navigation .menu li:first-child a .name {
+          padding-left: 20px; }
+        .navigation .menu li:first-child a .iconfont {
+          padding-right: 20px; }
+      .navigation .menu li a {
+        height: 45px;
+        line-height: 45px;
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-left: 20px;
+        margin-right: 20px; }
+        .navigation .menu li a .name {
+          float: left; }
+        .navigation .menu li a .iconfont {
+          float: right; }
+        .navigation .menu li a:hover {
+          color: #eee;
+          cursor: default; }
+      .navigation .menu li.act {
+        color: #eee;
+        cursor: default;
+        background-color: #15171F; }
+    .navigation .menu .sub-menu {
+      text-indent: 2em; }
+
+.icon_menu {
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  background: url(https://img.alicdn.com/tps/TB1MoQaOFXXXXbbXFXXXXXXXXXX-50-47.png) no-repeat;
+  background-size: 16px 15px; }
+
+.footer {
+  color: #999;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 15px;
+  text-align: left; }
+
+/*# sourceMappingURL=common_mb.css.map */

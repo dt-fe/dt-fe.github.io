@@ -1,0 +1,210 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 37933 */
+  src: url('//at.alicdn.com/t/font_1qsrlgvnn11kmx6r.eot');
+  src: url('//at.alicdn.com/t/font_1qsrlgvnn11kmx6r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1qsrlgvnn11kmx6r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1qsrlgvnn11kmx6r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1qsrlgvnn11kmx6r.svg#iconfont') format('svg');
+}
+
+.iconfont{
+	font-size: 16px;
+	font-style:normal;
+	font-family:"iconfont";
+}
+
+body{
+	font-family: 'Microsoft YaHei','微软雅黑', MicrosoftYaHei ,'STHeiti Light','STXihei','Helvetica Neue', Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+#toTop{
+
+	cursor: pointer;
+	position:fixed;
+	right:10px;
+	z-index: 9998;
+	display: none;
+	bottom:10px;
+	
+	height: 40px;
+	width: 40px;
+	background: #fff;
+	opacity: 0.9;
+	border: 1px solid #cecece;
+	line-height: 42px;
+    text-align: center;
+	
+	.iconfont{
+		font-size: 25px;
+		color: #999;
+	}
+}
+
+
+@for $i from 1 through 30 {
+	.delay#{$i} {
+		animation-delay: 0s + $i/10;
+		-ms-animation-delay: 0s + $i/10;
+	}
+}
+
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-left{
+	text-align: left;
+}
+
+.layer{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.wrapper{
+	margin: 0 auto;
+}
+.navigation-placeholder{
+	height: 48px;
+}
+.navigation{
+    top: 0;
+	z-index: 11;
+    width: 100%;
+	height: 48px;
+    position: fixed;
+    background-color: #1B1D26;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    .nav-title{
+    	position: absolute;
+		left: 50%;
+		width: 80px;
+		text-align: center;
+		margin-left: -40px;
+    }
+	.logo{
+		float: left;
+	    width: 105px;
+	    height: 48px;
+	    line-height: 40px;
+	    cursor: default;
+		text-decoration: none;
+	    .logo-icon{
+			width: 27px;
+			margin-top: 5px;
+			vertical-align: middle;
+	    }
+	    .logo-title{
+			width: 60px;
+			margin-left: -5px;
+			vertical-align: middle;
+			margin-top: 4px;
+	    }
+	    &:hover{
+			cursor: default;
+			text-decoration: none;
+	    }
+	}
+	.btn-menu{
+		float: right;
+		font-size: 20px;
+		padding-left: 5px;
+		padding-right: 10px;
+		&:hover{
+			color: #eee;
+		}
+	}
+	.menu{
+		display: none;
+		clear: both;
+		background-color: #1B1D26;
+		.sub-menu{
+			li:first-child a{
+				margin-left: 20px;
+				margin-right: 20px;
+				.name{
+					padding-left: 0px;
+				}
+				.iconfont{
+					padding-right: 0px;
+				}
+			}
+		}
+		li{
+			overflow: hidden;
+			clear: both;
+
+			&:first-child{
+				a{
+					margin-left: 0;
+					margin-right: 0;
+					.name{
+						padding-left: 20px;
+					}
+					.iconfont{
+						padding-right: 20px;
+					}
+				}
+			}
+			
+			a{
+				height: 45px;
+				line-height: 45px;
+				display: block;
+				color: #fff;
+				font-size: 14px;
+				text-decoration: none;
+
+				border-top: 1px solid rgba(255, 255, 255, 0.1);
+    			margin-left: 20px;
+    			margin-right: 20px;
+
+				.name{
+					float: left;
+				}
+				.iconfont{
+					float: right;
+				}
+				&:hover{
+					color: #eee;
+					cursor: default;
+				}
+			}
+			&.act{
+				color: #eee;
+				cursor: default;
+				background-color: #15171F;
+			}
+		}
+		.sub-menu{
+			text-indent: 2em;
+		}
+	}
+}
+
+.icon_menu {
+	width: 16px;
+	height: 15px;
+	display: inline-block;
+	background: url(https://img.alicdn.com/tps/TB1MoQaOFXXXXbbXFXXXXXXXXXX-50-47.png) no-repeat;
+	background-size: 16px 15px;
+}
+
+
+.footer{
+	color: #999;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 15px;
+	text-align: left;
+	
+}

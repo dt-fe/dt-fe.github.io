@@ -1,0 +1,95 @@
+@import url(./reset.css);
+@import url(./common_mb.css);
+.join .layer1 img {
+  width: 100%; }
+.join .layer2 {
+  text-align: center; }
+  .join .layer2 .wrapper {
+    padding-top: 40px;
+    padding-bottom: 30px; }
+  .join .layer2 .big-title {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px; }
+  .join .layer2 .desc {
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    padding: 0 15px; }
+    .join .layer2 .desc .row {
+      margin-bottom: 15px; }
+  .join .layer2 .position {
+    width: 100%; }
+    .join .layer2 .position .row1 .item:nth-child(1) {
+      color: #0088FE; }
+      .join .layer2 .position .row1 .item:nth-child(1) .line {
+        background: #0088FE; }
+    .join .layer2 .position .row1 .item:nth-child(2) {
+      color: #33A0FE; }
+      .join .layer2 .position .row1 .item:nth-child(2) .line {
+        background: #33A0FE; }
+    .join .layer2 .position .row1 .item:nth-child(3) {
+      color: #00C49F; }
+      .join .layer2 .position .row1 .item:nth-child(3) .line {
+        background: #00C49F; }
+    .join .layer2 .position .row2 .item:nth-child(1) {
+      color: #FFBB28; }
+      .join .layer2 .position .row2 .item:nth-child(1) .line {
+        background: #FFBB28; }
+    .join .layer2 .position .row2 .item:nth-child(2) {
+      color: #FF8441; }
+      .join .layer2 .position .row2 .item:nth-child(2) .line {
+        background: #FF8441; }
+    .join .layer2 .position .row2 .item:nth-child(3) {
+      color: #9575DE; }
+      .join .layer2 .position .row2 .item:nth-child(3) .line {
+        background: #9575DE; }
+    .join .layer2 .position .item {
+      width: 33%;
+      float: left; }
+      .join .layer2 .position .item .item-wrapper {
+        margin: 5px;
+        height: 240px;
+        border: 1px solid #CECECE; }
+      .join .layer2 .position .item .iconfont {
+        font-size: 30px;
+        margin-top: 20px; }
+      .join .layer2 .position .item .title {
+        font-size: 14px;
+        margin-top: 12px; }
+      .join .layer2 .position .item .line {
+        width: 32px;
+        height: 2px;
+        margin: 15px 0 10px;
+        display: inline-block; }
+      .join .layer2 .position .item .list a {
+        color: rgba(51, 51, 51, 0.5);
+        font-size: 12px;
+        line-height: 25px;
+        text-decoration: none; }
+  .join .layer2 .button {
+    clear: both;
+    width: 80%;
+    height: 47px;
+    line-height: 47px;
+    display: inline-block;
+    border: 1px solid #1B1D26;
+    margin-top: 30px;
+    margin-bottom: 16px; }
+    .join .layer2 .button a {
+      font-size: 14px;
+      color: #333333;
+      display: block;
+      text-decoration: none; }
+    .join .layer2 .button:hover {
+      background: #f4f4f4; }
+  .join .layer2 .description {
+    font-size: 12px;
+    color: #999; }
+    .join .layer2 .description div {
+      margin-bottom: 10px; }
+.join .footer {
+  background: #f4f4f4; }
+
+/*# sourceMappingURL=join_mb.css.map */

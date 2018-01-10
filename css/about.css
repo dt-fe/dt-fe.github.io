@@ -1,0 +1,272 @@
+@import url(./reset.css);
+@import url(./common.css);
+@import url(./animate.css);
+.about .layer1 {
+  height: 731px;
+  text-align: center;
+  background: url(https://img.alicdn.com/tps/TB1mdHUNXXXXXcyaXXXXXXXXXXX-1918-731.jpg) center center no-repeat; }
+  .about .layer1 .big-title {
+    color: #fff;
+    font-size: 36px;
+    line-height: 47px;
+    padding-top: 60px;
+    margin-bottom: 16px; }
+  .about .layer1 .desc {
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    text-shadow: 0px 3px 60px rgba(0, 0, 0, 0.3); }
+.about .layer2 {
+  background: #fff;
+  height: 1017px; }
+  .about .layer2 .wrapper {
+    padding-top: 56px;
+    padding-bottom: 60px; }
+  .about .layer2 .title {
+    color: #333;
+    font-size: 36px;
+    line-height: 47px; }
+  .about .layer2 .line {
+    height: 2px;
+    width: 72px;
+    background: #CECECE;
+    margin-bottom: 49px;
+    margin-top: 15px; }
+  .about .layer2 ul {
+    float: left; }
+    .about .layer2 ul .year {
+      color: #CECECE;
+      font-size: 32px;
+      line-height: 42px;
+      margin-right: 16px; }
+@keyframes circle-zoom {
+  0% {
+    r: 10; }
+  50% {
+    r: 20; }
+  100% {
+    r: 10; } }
+  .about .layer2 .img {
+    width: 7px;
+    float: left;
+    height: 753px;
+    margin-left: 16px;
+    margin-right: 33px;
+    display: inline-block;
+    background: url(https://img.alicdn.com/tps/TB1aTvYNXXXXXXwaXXXXXXXXXXX-7-753.png) no-repeat; }
+  .about .layer2 .circle {
+    top: 96px;
+    left: 91px;
+    position: absolute; }
+    .about .layer2 .circle circle {
+      opacity: 0.1;
+      fill: #242933;
+      animation: circle-zoom 4s infinite;
+      -webkit-animation: circle-zoom 4s infinite; }
+  .about .layer2 .content-wrapper {
+    position: relative; }
+  .about .layer2 .timeline {
+    text-align: right; }
+    .about .layer2 .timeline li {
+      margin-top: -15px;
+      margin-bottom: 58px; }
+      .about .layer2 .timeline li:nth-child(3) {
+        margin-top: -29px;
+        margin-bottom: 106px; }
+      .about .layer2 .timeline li:nth-child(5) {
+        margin-top: -29px;
+        margin-bottom: 64px; }
+      .about .layer2 .timeline li:nth-child(7) {
+        margin-top: 69px;
+        margin-bottom: 45px; }
+      .about .layer2 .timeline li:nth-child(9) {
+        margin-top: 60px; }
+  .about .layer2 .events {
+    color: #333;
+    font-size: 14px;
+    line-height: 22px; }
+    .about .layer2 .events li {
+      margin-bottom: 59px;
+      margin-top: -10px; }
+      .about .layer2 .events li:nth-child(4) {
+        margin-top: -16px; }
+      .about .layer2 .events li:nth-child(6) {
+        margin-top: -16px; }
+      .about .layer2 .events li:nth-child(8) {
+        margin-top: -16px; }
+.about .layer3 {
+  height: 717px;
+  background: #fafafa; }
+  .about .layer3 .wrapper {
+    padding: 60px 0; }
+  .about .layer3 .title {
+    color: #333;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    margin-bottom: 50px; }
+  .about .layer3 ul li {
+    float: left;
+    width: 345px;
+    height: 500px;
+    background: #fff;
+    text-align: center;
+    margin-right: 80px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); }
+    .about .layer3 ul li:last-child {
+      margin-right: 0px; }
+    .about .layer3 ul li .logo {
+      margin-top: 40px; }
+    .about .layer3 ul li .name {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      color: #333;
+      font-size: 18px;
+      line-height: 22px; }
+    .about .layer3 ul li .code {
+      width: 160px;
+      height: 161px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: 160px 160px; }
+    .about .layer3 ul li .desc {
+      color: #999;
+      font-size: 14px;
+      line-height: 19px;
+      margin-top: 10px; }
+    .about .layer3 ul li .line {
+      width: 250px;
+      height: 1px;
+      margin-top: 32px;
+      margin-bottom: 24px;
+      background: #E6E6E6;
+      display: inline-block; }
+    .about .layer3 ul li .weibo .sprite, .about .layer3 ul li .email .sprite {
+      margin-right: 6px;
+      vertical-align: middle; }
+    .about .layer3 ul li .text {
+      color: #666;
+      font-size: 14px;
+      line-height: 22px;
+      vertical-align: middle; }
+      .about .layer3 ul li .text a {
+        color: #666;
+        text-decoration: none; }
+        .about .layer3 ul li .text a:hover {
+          text-decoration: underline; }
+    .about .layer3 ul li:nth-child(1) .code {
+      background-image: url(https://img.alicdn.com/tps/TB10o29NXXXXXbOXVXXXXXXXXXX-620-620.jpg); }
+    .about .layer3 ul li:nth-child(2) .code {
+      background-image: url(https://img.alicdn.com/tps/TB1SoUlNXXXXXajXpXXXXXXXXXX-620-620.jpg); }
+    .about .layer3 ul li:nth-child(3) .code {
+      background-image: url(https://img.alicdn.com/tps/TB1rfZnNXXXXXbqXpXXXXXXXXXX-258-258.jpg); }
+.about .layer4 {
+  height: 640px;
+  position: relative;
+  background: url(https://img.alicdn.com/tps/TB1HiNYNpXXXXbBXFXXXXXXXXXX-1920-640.jpg) center center no-repeat; }
+  .about .layer4 .wrapper {
+    position: relative; }
+  .about .layer4 .xixi {
+    top: 81px;
+    left: 146px;
+    position: absolute; }
+  .about .layer4 .bj {
+    top: 541px;
+    right: 73px;
+    display: none;
+    position: absolute; }
+  .about .layer4 .big {
+    opacity: 0.2;
+    fill: #F96909;
+    animation: circle-zoom 4s infinite;
+    -webkit-animation: circle-zoom 4s infinite; }
+  .about .layer4 .sm {
+    r: 8;
+    fill: #F96909; }
+  .about .layer4 .info {
+    position: absolute;
+    top: 200px;
+    left: 5px; }
+    .about .layer4 .info li {
+      opacity: 0.9;
+      width: 478px;
+      margin-bottom: 10px;
+      background: #1B1F26; }
+      .about .layer4 .info li .title {
+        cursor: pointer;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        padding: 20px; }
+        .about .layer4 .info li .title .name {
+          color: #fff;
+          font-size: 18px;
+          line-height: 22px;
+          display: inline-block; }
+        .about .layer4 .info li .title .sprite {
+          float: right;
+          margin-top: 8px; }
+      .about .layer4 .info li .content {
+        display: none;
+        padding-top: 6px;
+        padding-left: 20px;
+        padding-bottom: 20px; }
+        .about .layer4 .info li .content .text {
+          color: #fff;
+          font-size: 14px;
+          line-height: 22px; }
+        .about .layer4 .info li .content .link {
+          color: #62B6FF;
+          font-size: 14px;
+          margin-top: 12px;
+          line-height: 19px; }
+          .about .layer4 .info li .content .link a {
+            color: #62B6FF;
+            text-decoration: none; }
+            .about .layer4 .info li .content .link a:hover {
+              text-decoration: underline; }
+      .about .layer4 .info li .show {
+        display: block; }
+.about .footer {
+  background: #fafafa; }
+
+.sprite {
+  background-image: url(https://img.alicdn.com/tps/TB1K43jNXXXXXanXFXXXXXXXXXX-183-125.png);
+  background-repeat: no-repeat;
+  display: inline-block; }
+
+.sprite-down {
+  width: 14px;
+  height: 9px;
+  background-position: -5px -5px; }
+
+.sprite-email {
+  width: 15px;
+  height: 13px;
+  background-position: -29px -5px; }
+
+.sprite-logo-kmd {
+  width: 57px;
+  height: 51px;
+  background-position: -54px -5px; }
+
+.sprite-logo-shuju {
+  width: 57px;
+  height: 53px;
+  background-position: -121px -5px; }
+
+.sprite-logo-sycm {
+  width: 53px;
+  height: 52px;
+  background-position: -5px -68px; }
+
+.sprite-up {
+  width: 14px;
+  height: 10px;
+  background-position: -68px -68px; }
+
+.sprite-weibo {
+  width: 18px;
+  height: 15px;
+  background-position: -92px -68px; }
+
+/*# sourceMappingURL=about.css.map */

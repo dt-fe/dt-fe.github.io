@@ -1,0 +1,303 @@
+@import url(./reset.css);
+@import url(./common.css);
+@import url(./animate.css);
+.onedata .big-title {
+  color: #333;
+  font-size: 36px;
+  line-height: 36px; }
+.onedata .layer1 {
+  height: 618px;
+  background: url(https://img.alicdn.com/tps/TB1iugyNXXXXXbKXXXXXXXXXXXX-1920-618.jpg) center center no-repeat; }
+.onedata .layer2 {
+  height: 175px;
+  background: #fafafa; }
+  .onedata .layer2 .wrapper {
+    padding: 50px 0; }
+  .onedata .layer2 .overview {
+    width: 1200px;
+    overflow: hidden;
+    display: inline-block; }
+    .onedata .layer2 .overview li {
+      float: left;
+      width: 218px;
+      text-align: left;
+      margin-right: 50px;
+      padding-right: 50px;
+      border-right: 1px solid #E1E1E1; }
+      .onedata .layer2 .overview li .sprite {
+        margin-right: 16px; }
+      .onedata .layer2 .overview li .title {
+        color: #333;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 12px; }
+      .onedata .layer2 .overview li .desc {
+        color: #999;
+        font-size: 14px;
+        line-height: 22px;
+        width: 170px;
+        display: inline-block; }
+      .onedata .layer2 .overview li .right {
+        width: 210px; }
+      .onedata .layer2 .overview li:last-child {
+        margin-right: 0px;
+        padding-right: 0px;
+        border-right: none; }
+.onedata .layer3 {
+  background: #fff;
+  text-align: center; }
+  .onedata .layer3 .wrapper {
+    padding: 70px 0; }
+  .onedata .layer3 .big-title {
+    margin-bottom: 16px; }
+  .onedata .layer3 .desc {
+    color: #666;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 40px; }
+  .onedata .layer3 .img {
+    width: 818px;
+    height: 473px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(https://img.alicdn.com/tps/TB1mP86NVXXXXa0XXXXXXXXXXXX-818-473.png); }
+  .onedata .layer3 .list {
+    position: relative; }
+    .onedata .layer3 .list li {
+      width: 130px;
+      text-align: left;
+      position: absolute; }
+      .onedata .layer3 .list li .title {
+        color: #333;
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 10px; }
+      .onedata .layer3 .list li .text {
+        color: #666;
+        font-size: 14px;
+        line-height: 20px; }
+      .onedata .layer3 .list li:nth-child(1) {
+        top: 60px;
+        left: 350px; }
+      .onedata .layer3 .list li:nth-child(2) {
+        top: 26px;
+        left: 827px; }
+      .onedata .layer3 .list li:nth-child(3) {
+        top: 106px;
+        left: 1020px; }
+      .onedata .layer3 .list li:nth-child(4) {
+        top: 280px;
+        left: 950px; }
+      .onedata .layer3 .list li:nth-child(5) {
+        top: 380px;
+        left: 300px; }
+.onedata .layer4 {
+  overflow: hidden;
+  text-align: center;
+  background: #fafafa; }
+  .onedata .layer4 .wrapper {
+    padding: 80px 0; }
+  .onedata .layer4 .big-title {
+    margin-bottom: 60px; }
+@keyframes move-up {
+  0% {
+    margin-top: 30px; }
+  100% {
+    margin-top: 0px; } }
+  .onedata .layer4 .animated.moveUp {
+    animation: move-up 4s 1;
+    -webkit-animation: move-up 4s 1; }
+  .onedata .layer4 .img {
+    width: 796px;
+    height: 488px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(https://img.alicdn.com/tps/TB1QMNcNVXXXXbvaXXXXXXXXXXX-796-488.png); }
+.onedata .layer5 {
+  text-align: center;
+  background: #fff; }
+  .onedata .layer5 .wrapper {
+    padding: 113px 0; }
+  .onedata .layer5 .position {
+    padding: 0 164px;
+    overflow: hidden; }
+    .onedata .layer5 .position .item {
+      float: left;
+      width: 220px;
+      height: 400px;
+      border: 1px solid #CECECE; }
+      .onedata .layer5 .position .item:last-child {
+        margin-right: 0px; }
+      .onedata .layer5 .position .item:nth-child(1) {
+        color: #2285DB; }
+        .onedata .layer5 .position .item:nth-child(1) .line {
+          background: #2285DB; }
+      .onedata .layer5 .position .item:nth-child(3) {
+        color: #00C890; }
+        .onedata .layer5 .position .item:nth-child(3) .line {
+          background: #00C890; }
+      .onedata .layer5 .position .item:nth-child(5) {
+        color: #E9B543; }
+        .onedata .layer5 .position .item:nth-child(5) .line {
+          background: #E9B543; }
+      .onedata .layer5 .position .item .sprite {
+        margin-top: 42px; }
+      .onedata .layer5 .position .item .title {
+        font-size: 18px;
+        margin-top: 12px;
+        line-height: 24px; }
+      .onedata .layer5 .position .item .line {
+        width: 32px;
+        height: 2px;
+        margin: 20px 0;
+        display: inline-block; }
+      .onedata .layer5 .position .item .list a {
+        color: #333333;
+        font-size: 14px;
+        line-height: 32px;
+        text-decoration: none; }
+        .onedata .layer5 .position .item .list a:hover {
+          text-decoration: underline; }
+    .onedata .layer5 .position .arrow {
+      float: left;
+      width: 100px;
+      border: none;
+      line-height: 400px; }
+      .onedata .layer5 .position .arrow .sprite {
+        margin-top: 0; }
+  .onedata .layer5 .big-title {
+    margin-bottom: 60px; }
+.onedata .layer6 {
+  height: 550px;
+  background: #fafafa; }
+  .onedata .layer6 .wrapper {
+    padding: 76px 0; }
+  .onedata .layer6 .header {
+    padding-top: 0;
+    text-align: center;
+    margin-bottom: 40px; }
+    .onedata .layer6 .header .line {
+      height: 1px;
+      width: 120px;
+      margin: 0 10px;
+      background: #cecece;
+      display: inline-block; }
+    .onedata .layer6 .header .big-title {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center; }
+  .onedata .layer6 .list li {
+    float: left;
+    margin-bottom: 10px; }
+    .onedata .layer6 .list li .icon {
+      width: 228px;
+      height: 145px;
+      background: #fff;
+      margin-right: 10px;
+      text-align: center;
+      line-height: 145px;
+      display: inline-block;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); }
+      .onedata .layer6 .list li .icon:last-child {
+        margin-right: 0px; }
+      .onedata .layer6 .list li .icon .sprite {
+        vertical-align: middle; }
+    .onedata .layer6 .list li:last-child {
+      margin-bottom: 0px; }
+
+.sprite {
+  background-image: url(https://img.alicdn.com/tps/TB1ylICNXXXXXaCXXXXXXXXXXXX-377-292.png);
+  background-repeat: no-repeat;
+  display: inline-block; }
+
+.sprite-1688 {
+  width: 143px;
+  height: 35px;
+  background-position: -5px -5px; }
+
+.sprite-arrow {
+  width: 29px;
+  height: 21px;
+  background-position: -158px -5px; }
+
+.sprite-cainiao {
+  width: 173px;
+  height: 47px;
+  background-position: -5px -50px; }
+
+.sprite-dingding {
+  width: 119px;
+  height: 47px;
+  background-position: -5px -107px; }
+
+.sprite-dingyi {
+  width: 30px;
+  height: 30px;
+  background-position: -197px -5px; }
+
+.sprite-guanli {
+  width: 37px;
+  height: 42px;
+  background-position: -237px -5px; }
+
+.sprite-guifan {
+  width: 32px;
+  height: 33px;
+  background-position: -188px -57px; }
+
+.sprite-guifans {
+  width: 39px;
+  height: 39px;
+  background-position: -230px -57px; }
+
+.sprite-jianmo {
+  width: 28px;
+  height: 29px;
+  background-position: -188px -106px; }
+
+.sprite-juhuasuan {
+  width: 111px;
+  height: 44px;
+  background-position: -134px -145px; }
+
+.sprite-mama {
+  width: 146px;
+  height: 32px;
+  background-position: -5px -199px; }
+
+.sprite-search {
+  width: 159px;
+  height: 46px;
+  background-position: -5px -241px; }
+
+.sprite-taobao {
+  width: 111px;
+  height: 50px;
+  background-position: -174px -199px; }
+
+.sprite-tmall {
+  width: 77px;
+  height: 54px;
+  background-position: -284px -5px; }
+
+.sprite-tool {
+  width: 29px;
+  height: 29px;
+  background-position: -279px -69px; }
+
+.sprite-tools {
+  width: 39px;
+  height: 39px;
+  background-position: -318px -69px; }
+
+.sprite-trip {
+  width: 117px;
+  height: 43px;
+  background-position: -255px -118px; }
+
+.sprite-youtu {
+  width: 187px;
+  height: 24px;
+  background-position: -174px -259px; }
+
+/*# sourceMappingURL=onedata.css.map */

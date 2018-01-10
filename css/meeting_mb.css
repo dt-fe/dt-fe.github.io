@@ -1,0 +1,91 @@
+@import url(./reset.css);
+@import url(./common_mb.css);
+.meeting {
+  background: #F4F4F4; }
+  .meeting .page-banner {
+    overflow: hidden; }
+    .meeting .page-banner .banner-wrapper {
+      overflow: hidden; }
+      .meeting .page-banner .banner-wrapper .banner-box {
+        float: left; }
+      .meeting .page-banner .banner-wrapper .banner-pic img {
+        width: 100%; }
+    .meeting .page-banner .banner-title {
+      font-size: 14px;
+      color: #fff;
+      margin-top: -40px;
+      text-align: center; }
+      .meeting .page-banner .banner-title li {
+        display: none; }
+        .meeting .page-banner .banner-title li.act {
+          display: block; }
+    .meeting .page-banner .banner-btn {
+      text-align: center;
+      margin-bottom: 10px; }
+      .meeting .page-banner .banner-btn li {
+        display: inline-block; }
+      .meeting .page-banner .banner-btn .circle {
+        border-radius: 50%;
+        padding: 3px;
+        border: #fff 1px solid;
+        display: inline-block; }
+      .meeting .page-banner .banner-btn .act .circle {
+        background: #fff; }
+@keyframes move-left {
+  0% {
+    margin-left: 0; }
+  100% {
+    margin-left: -100%; } }
+@keyframes move-right {
+  0% {
+    margin-top: 60px; }
+  100% {
+    margin-top: 15px; } }
+  .meeting .move-left {
+    animation: move-left 2s 1 forwards;
+    -webkit-animation: move-left 2s 1 forwards; }
+  .meeting .page-content {
+    clear: both;
+    width: 100%;
+    overflow: hidden;
+    color: #333333; }
+    .meeting .page-content .sub-title {
+      padding: 30px 0 10px 15px;
+      font-size: 14px; }
+    .meeting .page-content .pic-list {
+      margin: 10px;
+      overflow: hidden; }
+      .meeting .page-content .pic-list .content-link {
+        text-decoration: none;
+        display: block; }
+      .meeting .page-content .pic-list .content-box {
+        float: left;
+        width: 50%;
+        margin-bottom: 10px; }
+        .meeting .page-content .pic-list .content-box .content-pic .img-wrapper {
+          padding: 0 5px; }
+        .meeting .page-content .pic-list .content-box .content-pic img {
+          width: 100%; }
+        .meeting .page-content .pic-list .content-box .content-text {
+          font-size: 12px;
+          margin: 0 5px;
+          background: #fff;
+          padding: 5px;
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); }
+          .meeting .page-content .pic-list .content-box .content-text .text-title {
+            color: #333333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          .meeting .page-content .pic-list .content-box .content-text .text-desc {
+            color: #999999;
+            padding-top: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+    .meeting .page-content .clear {
+      clear: both; }
+  .meeting .footer {
+    background: #fff; }
+
+/*# sourceMappingURL=meeting_mb.css.map */

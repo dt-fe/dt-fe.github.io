@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./common_mb.css);
+html, body, .page {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  html p, html div, html hr, html ul, html li, body p, body div, body hr, body ul, body li, .page p, .page div, .page hr, .page ul, .page li {
+    margin: 0;
+    padding: 0;
+    border: none; }
+
+.page {
+  background: #fff;
+  padding-bottom: 30px; }
+  .page .nav {
+    height: 43px;
+    background: #1B1D26; }
+  .page .header {
+    color: #fff;
+    text-align: center;
+    background: #0f1633;
+    position: relative;
+    font-size: 0; }
+    .page .header .content {
+      padding-top: 70px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0; }
+      .page .header .content .title {
+        font-size: 22px;
+        color: #FFFFFF; }
+      .page .header .content .sub-title {
+        margin-top: 13px;
+        font-size: 14px;
+        opacity: 0.5;
+        color: #FFFFFF;
+        line-height: 20px;
+        padding: 0 28px; }
+    .page .header img {
+      width: 100%; }
+  .page .container {
+    background: #f4f4f4;
+    padding-top: 53px;
+    text-center: center;
+    width: 100%;
+    overflow: hidden; }
+    .page .container .title {
+      /* 201水立方“双11晚会”大屏: */
+      font-size: 22px;
+      color: #333333;
+      line-height: 24px;
+      text-align: center; }
+    .page .container ul {
+      margin-top: 36px;
+      font-size: 0;
+      vertical-align: top;
+      white-space: nowrap; }
+      .page .container ul li {
+        vertical-align: top;
+        display: inline-block;
+        width: 24%;
+        margin-right: 12px;
+        min-height: 70px;
+        border: 1px solid #CECECE;
+        position: relative;
+        text-align: center; }
+      .page .container ul li:last-child {
+        width: 25%;
+        margin-right: 0; }
+      .page .container ul li:first-child {
+        margin-left: -12px;
+        width: 25%; }
+      .page .container ul li:before {
+        content: ' ';
+        background: url(https://gw.alicdn.com/tps/TB1gVAsOFXXXXb8aXXXXXXXXXXX-27-27.png);
+        background-size: contain;
+        width: 9px;
+        height: 9px;
+        position: absolute;
+        top: 50%;
+        margin-top: -4px;
+        right: -12px; }
+    .page .container .img-wrapper {
+      min-height: 44px;
+      line-height: 44px; }
+      .page .container .img-wrapper .icon {
+        width: 33px;
+        vertical-align: middle; }
+    .page .container p {
+      font-size: 14px;
+      color: #666666;
+      line-height: 18px; }
+  .page .sections {
+    background: #fff;
+    padding: 0 4%; }
+    .page .sections .section {
+      padding-top: 53px;
+      text-align: center; }
+      .page .sections .section .title {
+        /* 201水立方“双11晚会”大屏: */
+        font-size: 22px;
+        color: #333333;
+        line-height: 24px; }
+      .page .sections .section .sub-title {
+        /* 实时数据可视化技术，保障数据准确、实时、: */
+        font-size: 14px;
+        color: #999999;
+        line-height: 20px;
+        padding: 6px 30px; }
+      .page .sections .section .video {
+        position: relative; }
+        .page .sections .section .video .video-preview {
+          position: relative; }
+        .page .sections .section .video .video-icon {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 160px;
+          height: 160px;
+          line-height: 180px;
+          margin-left: -80px;
+          margin-top: -80px;
+          text-align: center; }
+          .page .sections .section .video .video-icon .icon {
+            width: 33px;
+            height: 33px;
+            display: inline-block;
+            background: url(https://img.alicdn.com/tps/TB1SvTGOFXXXXXxapXXXXXXXXXX-100-100.png);
+            background-size: contain; }
+        .page .sections .section .video .video-loading {
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 16px;
+          height: 16px;
+          margin-left: -8px;
+          margin-top: -8px;
+          background: url(https://gw.alicdn.com/tps/TB19knkOVXXXXbIapXXXXXXXXXX-16-16.gif);
+          background-size: contain; }
+        .page .sections .section .video img {
+          width: 100%; }
+        .page .sections .section .video video {
+          width: 100%;
+          display: none; }
+
+.earth {
+  width: 100%;
+  min-height: 510px;
+  position: relative; }
+  .earth .static-earth {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    background: url(https://img.alicdn.com/tps/TB12CEgNpXXXXczXFXXXXXXXXXX-544-532.jpg) no-repeat;
+    background-size: 300px 300px; }
+  .earth #three-container {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    width: 320px;
+    height: 320px;
+    margin-left: -160px; }
+
+/*# sourceMappingURL=dv_mb.css.map */

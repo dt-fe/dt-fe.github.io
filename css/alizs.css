@@ -1,0 +1,182 @@
+@import url(./reset.css);
+@import url(./animate.css);
+@import url(./common.css);
+.alizs .product-nav {
+  height: 48px;
+  min-width: 1400px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15); }
+  .alizs .product-nav ul {
+    float: right;
+    width: 500px; }
+    .alizs .product-nav ul li {
+      float: left;
+      margin-right: 40px; }
+      .alizs .product-nav ul li a {
+        font-size: 14px;
+        display: block;
+        height: 47px;
+        line-height: 47px;
+        cursor: pointer;
+        text-decoration: none;
+        color: rgba(51, 51, 51, 0.7); }
+        .alizs .product-nav ul li a:hover {
+          color: #333; }
+        .alizs .product-nav ul li a.act {
+          color: #333;
+          cursor: default;
+          border-bottom: solid #0F1727 2px; }
+.alizs .panel-title {
+  color: #fff;
+  font-size: 36px;
+  line-height: 47px;
+  margin-bottom: 16px; }
+.alizs .panel-desc {
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 8px;
+  display: inline-block; }
+.alizs .panel-link {
+  color: #0088FE;
+  font-size: 14px;
+  line-height: 20px; }
+.alizs .panel-line i {
+  width: 110px;
+  height: 2px;
+  background-color: #fff;
+  display: inline-block; }
+.alizs .main-layer {
+  clear: both;
+  height: 720px;
+  text-align: center; }
+  .alizs .main-layer .panel-title {
+    padding-top: 284px;
+    font-size: 44px;
+    line-height: 47px;
+    margin-bottom: 24px;
+    font-weight: bold; }
+  .alizs .main-layer .panel-desc {
+    width: 760px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 16px; }
+  .alizs .main-layer .panel-link {
+    font-size: 18px; }
+    .alizs .main-layer .panel-link a {
+      color: #ffe14e;
+      text-decoration: none; }
+      .alizs .main-layer .panel-link a:hover {
+        text-decoration: underline; }
+.alizs .layer1 {
+  height: 480px;
+  background: #fff;
+  text-align: center;
+  position: relative; }
+  .alizs .layer1 .box {
+    margin-top: 98px;
+    float: left;
+    margin-right: 7px; }
+    .alizs .layer1 .box:last-child {
+      margin-right: 0px; }
+  .alizs .layer1 .box-img {
+    width: 395px;
+    height: 200px; }
+  .alizs .layer1 .box-title {
+    color: #000;
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 13px; }
+  .alizs .layer1 .box-desc {
+    color: #333;
+    font-size: 14px; }
+.alizs .layer2 {
+  height: 480px;
+  position: relative;
+  text-align: center; }
+  .alizs .layer2 .panel-title {
+    padding-top: 179px;
+    margin-bottom: 8px; }
+  .alizs .layer2 .panel-desc {
+    margin-top: 20px; }
+.alizs .layer3 {
+  background: #fafafa;
+  position: relative; }
+  .alizs .layer3 .wrapper {
+    padding-top: 224px; }
+  .alizs .layer3 .panel-title {
+    color: #000;
+    padding-top: 74px; }
+  .alizs .layer3 .panel-desc {
+    color: #333;
+    width: 546px;
+    padding-top: 10px; }
+  .alizs .layer3 .panel-img {
+    width: 648px;
+    height: 450px;
+    float: right; }
+    .alizs .layer3 .panel-img img {
+      padding-left: 28px; }
+.alizs .layer4 {
+  background: #fff; }
+  .alizs .layer4 .wrapper {
+    padding-top: 145px;
+    padding-left: 41px; }
+  .alizs .layer4 .panel-title {
+    color: #000;
+    padding-top: 154px; }
+  .alizs .layer4 .panel-desc {
+    color: #333;
+    width: 500px;
+    padding-top: 10px; }
+  .alizs .layer4 .panel-img {
+    width: 648px;
+    height: 450px;
+    float: left;
+    margin-right: 31px; }
+.alizs .layer5 {
+  height: 480px;
+  position: relative;
+  text-align: center; }
+  .alizs .layer5 .panel-title {
+    padding-top: 174px;
+    margin-bottom: 8px; }
+  .alizs .layer5 .panel-desc {
+    margin-top: 20px; }
+.alizs .layer6 {
+  background: #fafafa;
+  position: relative; }
+  .alizs .layer6 .wrapper {
+    padding-top: 73px; }
+  .alizs .layer6 .panel-title {
+    color: #000;
+    padding-top: 219px; }
+  .alizs .layer6 .panel-desc {
+    color: #333;
+    padding-top: 10px; }
+  .alizs .layer6 .panel-img {
+    width: 648px;
+    height: 450px;
+    float: right; }
+    .alizs .layer6 .panel-img img {
+      padding-left: 77px; }
+.alizs .layer7 {
+  background: #fff; }
+  .alizs .layer7 .wrapper {
+    padding-top: 90px;
+    padding-right: 31px; }
+  .alizs .layer7 .panel-title {
+    color: #000;
+    padding-top: 187px; }
+  .alizs .layer7 .panel-desc {
+    color: #333;
+    width: 500px;
+    padding-top: 10px; }
+  .alizs .layer7 .panel-img {
+    width: 648px;
+    height: 450px;
+    float: left;
+    margin-right: 50px; }
+.alizs .footer {
+  background-color: #fafafa; }
+
+/*# sourceMappingURL=alizs.css.map */

@@ -1,0 +1,900 @@
+@import url(./reset.css);
+@import url(./animate.css);
+@import url(./common_mb.css);
+
+.home{
+	color: #fff;
+	.layer{
+		padding: 70px 0;
+	}
+
+	.layer1{
+		// min-height: 700px;
+	}
+	.layer2{
+		background-color: #f4f4f4;
+	}
+	.layer3{
+		background: #0D1633;
+	}
+	.layer4{
+		background-color: #f4f4f4;
+	}
+	.layer4-2{
+		min-height: 260px;
+		background-color: #ffffff;
+	}
+	.layer5{
+		background-color: #0D1633;
+	}
+	.layer6{
+		background-color: #f4f4f4;
+	}
+	.layer7{
+		background: #0D1633;
+		overflow: hidden;
+	}
+
+	.panel-content{
+		text-align: center;
+		padding: 0 15px;
+
+	}
+
+	.panel-title{
+		color: #333;
+		padding-top: 10px;
+		font-size: 22px;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.panel-keyword{
+		color: #333;
+		font-size: 14px;
+		margin-bottom: 7px;
+	}
+	.panel-desc{
+		font-size: 14px;
+		color: rgba(51,51,51,0.5);
+		line-height: 22px;
+	}
+	.panel-more{
+		color: #0088fe;
+		font-size: 14px;
+		margin-top: 6px;
+		a{
+			color: #0088fe;
+			cursor: pointer;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.dark .panel-title{ color: rgba(255,255,255,1); }
+	.dark .panel-desc{ color: #ffffff; opacity: 0.6; }
+	.dark .panel-more{
+		color: #FFBB28;
+		a{
+			color: #FFBB28;
+		}
+	}
+
+
+	.main-layer{
+		clear: both;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		.banner-wrapper{
+			width: 200%;
+		}
+
+		
+		.banner{
+			text-decoration: none;
+			display: block;
+			float: left;
+			width: 50%;
+			img{
+				width: 100%;
+			}
+		}
+
+		.bg-0, .bg-1{
+			display: block;
+		}
+
+		.slideOut{
+			-webkit-animation: slide-out 1s 1;
+			-o-animation: slide-out 1s 1;
+			-moz-animation: slide-out 1s 1;
+			-ms-animation: slide-out 1s 1;
+			animation: slide-out 1s 1;
+		}
+
+		@-webkit-keyframes slide-out{
+			0% { margin-left: 0;}
+			100% { margin-left: -100%;}
+		}
+		@keyframes slide-out{
+			0% { margin-left: 0;}
+			100% { margin-left: -100%;}
+		}
+	}
+
+	.foot-bar, .cards{
+		background-color: #f4f4f4;
+		padding: 10px 8px;
+    	overflow: hidden;
+		.row{
+			margin: 30px 0;
+		}
+		.row-box{
+			float: left;
+			width: 48%;
+			color: #333;
+			padding: 0 5px;
+			box-sizing: border-box;
+
+			&:first-child{
+				width: 51%;
+			}
+	
+			.bar-item{
+				.iconfont{
+					font-size: 22px;
+					color: #0088FE;
+					display: inline-block;
+					margin-right: 5px;
+				}
+				.data-value{
+					display: inline-block;
+					font-size: 22px;
+				}
+			}
+			.data-text{
+				font-size: 12px;
+				margin-top: 5px;
+				color: #999;
+				line-height: 16px;
+				max-width: 180px;
+			}
+		}
+		.clearfix{
+			clear: both;
+		}
+	}
+	// 顶层设计
+	.layer1{
+		text-align: center;
+		overflow: hidden;
+		position: relative;
+		clear: both;
+
+		.panel-content{
+			padding: 0 5px;
+			a.iconfont{
+				color: #cecece;
+				float: left;
+				width: 12%;
+				text-decoration: none;
+				display: block;
+				height: 53px;
+				line-height: 70px;
+				font-size: 24px;
+			}
+			.tabs{
+				float: left;
+				width: 76%;
+				min-height: 87px;
+				.item{
+					display: none;
+					&:nth-child(1){
+						display: block;
+					}
+				}
+			}
+		}
+		
+		.banner{
+			clear: both;
+			z-index: -1;
+			position: relative;
+
+			.img-group{
+				padding-top: 50px;
+				margin-left: 10px;
+				img{
+					width: 100%;
+					display: none;
+					&:nth-child(1){
+						display: block;
+					}
+				}
+			}
+			
+			.circle-ripple {
+				background-color: rgba(176, 189, 255, 0.1);
+				width: 1px;
+				height: 1px;
+				-webkit-border-radius: 49%;
+    			-moz-border-radius: 49%;
+				border-radius: 49%;
+				animation: ripple 1.5s linear infinite;
+				-webkit-animation: ripple 1.5s linear infinite;
+				-o-animation: ripple 1.5s linear infinite;
+				-moz-animation: ripple 1.5s linear infinite;
+				-ms-animation: ripple 1.5s linear infinite;
+
+				position: absolute;
+				left: 49%;
+				top: 45%;
+			}
+
+			@keyframes ripple {
+			  0% {
+			    box-shadow: 0 0 0 0 rgba(176, 189, 255, 0.2),
+			                0 0 0 4em rgba(176, 189, 255, 0.2),
+			                0 0 0 8em rgba(176, 189, 255, 0.2);
+			  }
+			  100% {
+			    box-shadow: 0 0 0 4em rgba(176, 189, 255, 0.2),
+			                0 0 0 8em rgba(176, 189, 255, 0.2),
+			                0 0 0 12em rgba(176, 189, 255, 0);
+			  }
+			}
+			@-webkit-keyframes ripple {
+			  0% {
+			    box-shadow: 0 0 0 0 rgba(176, 189, 255, 0.2),
+			                0 0 0 4em rgba(176, 189, 255, 0.2),
+			                0 0 0 8em rgba(176, 189, 255, 0.2);
+			  }
+			  100% {
+			    box-shadow: 0 0 0 4em rgba(176, 189, 255, 0.2),
+			                0 0 0 8em rgba(176, 189, 255, 0.2),
+			                0 0 0 12em rgba(176, 189, 255, 0);
+			  }
+			}
+			
+		}
+	}
+	// 数据资产 
+	.layer2{
+		.image{
+			width: 320px; 
+			height: 230px;
+			margin: 0 auto;
+			overflow: hidden;
+			margin-top: 40px;
+			.bg{
+				width: 100%;
+				height: 444px;
+				background: url("https://img.alicdn.com/tps/TB1PXMuMVXXXXbZapXXXXXXXXXX-648-444.png");
+			}
+				
+			#particle-line{
+				transform:  scale(0.53) translateX(-266px) translateY(-198px);
+				-webkit-transform:  scale(0.53) translateX(-266px) translateY(-198px);
+				-moz-transform:  scale(0.53) translateX(-266px) translateY(-198px);
+				-o-transform:  scale(0.53) translateX(-266px) translateY(-198px);
+				-ms-transform:  scale(0.53) translateX(-266px) translateY(-198px);
+			}
+
+		}
+	}
+	// 数据可视化 3d地球
+	.layer3{
+		padding-bottom: 30px;
+		.banner{
+			margin-top: 10px;
+			width: 90%;
+			margin: 0 auto;
+
+			img{
+				width: 100%;
+			}
+		}
+	}
+	// 生意参谋
+	.layer4{
+		padding-bottom: 0;
+		.panel-content{
+			.sycm{
+				width: 106px;
+				height: 22px;
+				margin-bottom: 10px;
+				display: inline-block;
+				background: url(https://img.alicdn.com/tps/TB1MblOOVXXXXbrXXXXXXXXXXXX-290-60.png);
+				background-size: 106px 22px;
+			}
+		}
+
+		@-webkit-keyframes move-right{
+			0% { right: 170px; }
+			100% { right: 0px; }
+		}
+		@-webkit-keyframes move-left{
+			0% { left: 170px; }
+			100% { left: 0px; }
+		}
+		@keyframes move-right{
+			0% { right: 170px; }
+			100% { right: 0px; }
+		}
+		@keyframes move-left{
+			0% { left: 170px; }
+			100% { left: 0px; }
+		}
+
+		.banner{
+			margin-top: 50px;
+			text-align: center;
+			position: relative;
+			z-index: 0;
+			overflow: hidden;
+			.img{
+				display: inline-block;
+				box-shadow: 0px 20px 60px rgba(0,0,0,0.15);
+			}
+			.img-right{
+				z-index: -1;
+				bottom: 0;
+				right: 0px;
+				width: 30%;
+				position: absolute;
+				// background: url(https://img.alicdn.com/tps/TB1Wj8DNVXXXXbmaXXXXXXXXXXX-283-290.jpg);
+			}
+			.img-left{
+				    z-index: -1;
+				bottom: 0;
+				left: 0px;
+				width: 30%;
+				position: absolute;
+				// background: url(https://img.alicdn.com/tps/TB1YVtENVXXXXb7aXXXXXXXXXXX-279-296.jpg);
+			}
+			.img-middle{
+				z-index: 1;
+				width: 70%;
+				margin-bottom: -2px;
+				// background: url(https://img.alicdn.com/tps/TB1foFZNVXXXXcYXpXXXXXXXXXX-640-370.jpg);
+
+			}
+
+			.animated.img-right{
+				animation: move-right 2s 1 forwards;
+				-webkit-animation: move-right 2s 1 forwards;
+				-ms-animation: move-right 2s 1 forwards;
+				-o-animation: move-right 2s 1 forwards;
+				-moz-animation: move-right 2s 1 forwards;
+			}
+
+			.animated.img-left{
+				animation: move-left 2s 1 forwards;
+				-webkit-animation: move-left 2s 1 forwards;
+				-ms-animation: move-left 2s 1 forwards;
+				-o-animation: move-left 2s 1 forwards;
+				-moz-animation: move-left 2s 1 forwards;
+			}
+		}
+	}
+	// 孔明灯
+	.layer4-2{
+		z-index: 2;
+		overflow: hidden;
+		position: relative;
+		padding-bottom: 0;
+		.panel-content{
+			text-align: center;
+			.kmd{
+				width: 86px;
+				height: 30px;
+				margin-bottom: 10px;
+				display: inline-block;
+				background: url(https://gw.alicdn.com/tps/TB1y1M7OFXXXXb9aFXXXXXXXXXX-209-73.png);
+				background-size: 86px 30px;
+			}
+		}
+
+		@-webkit-keyframes moving-right{
+			0% { left: 0; }
+			100% { left: 6%; }
+		}
+		@-webkit-keyframes moving-left{
+			0% { right: 0; }
+			100% { right: 7%; }
+		}
+		@keyframes moving-right{
+			0% { left: 0; }
+			100% { left: 6%; }
+		}
+		@keyframes moving-left{
+			0% { right: 0; }
+			100% { right: 7%; }
+		}
+		.img-wrapper{
+			margin-top: 50px;
+			position: relative;
+			.placeholder{
+				width: 75%;
+				visibility: hidden;
+			}
+			.img{
+				position: absolute;
+				box-shadow: 0px 20px 60px rgba(0,0,0,0.15);
+			}
+			.img2right{
+				z-index: 1;
+				width: 75%;
+				bottom: 0;
+				left: 6%;
+				// background: url(https://img.alicdn.com/tps/TB1qly7NXXXXXcWXXXXXXXXXXXX-230-334.png);
+			}
+			.img2left{
+				z-index: 2;
+				right: 7%;
+				bottom: 0;
+				width: 30%;
+				// background: url(https://img.alicdn.com/tps/TB1T9KwNXXXXXbbapXXXXXXXXXX-750-398.jpg);
+			}
+
+			.animated.img2right{
+				animation: moving-right 2s 1 forwards;
+				-webkit-animation: moving-right 2s 1 forwards;
+				-ms-animation: moving-right 2s 1 forwards;
+				-o-animation: moving-right 2s 1 forwards;
+				-moz-animation: moving-right 2s 1 forwards;
+			}
+			.animated.img2left{
+				animation: moving-left 2s 1 forwards;
+				-webkit-animation: moving-left 2s 1 forwards;
+				-ms-animation: moving-left 2s 1 forwards;
+				-o-animation: moving-left 2s 1 forwards;
+				-moz-animation: moving-left 2s 1 forwards;
+			}
+		}
+	}
+	// 数据挖掘
+	.layer5{
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		padding-bottom: 0;
+		.container{
+			margin-bottom: 50px;
+		}
+		@-webkit-keyframes moving-up{
+			0% { margin-top: 100px; }
+			100% { margin-top: 0px; }
+		}
+		@keyframes moving-up{
+			0% { margin-top: 100px; }
+			100% { margin-top: 0px; }
+		}
+		.animated.move-up{
+			animation: moving-up 2s 1 forwards;
+			-webkit-animation: moving-up 2s 1 forwards;
+			-o-animation: moving-up 2s 1 forwards;
+			-moz-animation: moving-up 2s 1 forwards;
+			-ms-animation: moving-up 2s 1 forwards;
+		}
+		.banner-wrapper{
+			overflow: hidden;
+			position: relative;
+		}
+		.banner-placeholder{
+			visibility: hidden;
+			width: 85%;
+			margin-bottom: -3px;
+		}
+		.banner{
+			position: absolute;
+			left: 50%;
+			margin-left: -42.5%;
+			z-index: 1;
+			width: 85%;
+			margin-bottom: -3px;
+			box-shadow: 0px 20px 60px rgba(0,0,0,0.15);
+		}
+		
+		.editorial {
+		  display: block;
+		  width: 100%;
+		  height: 10em;
+		  margin: 0;
+		}
+		
+	}
+	// 业务架构
+	.layer6{
+		z-index: 1;
+		position: relative;
+		text-align: center;
+
+		@-webkit-keyframes move-up2{
+			0% { margin-top: 0px; }
+			100% { margin-top: 50px; }
+		}
+		@keyframes move-up2{
+			0% { margin-top: 0px; }
+			100% { margin-top: 50px; }
+		}
+		.animated.move-up2{
+			animation: move-up2 2s 1 forwards;
+			-webkit-animation: move-up2 2s 1 forwards;
+			-o-animation: move-up2 2s 1 forwards;
+			-moz-animation: move-up2 2s 1 forwards;
+			-ms-animation: move-up2 2s 1 forwards;
+		}
+
+		.banner-wrapper{
+			overflow: hidden;
+			position: relative;
+		}
+		.banner-placeholder{
+			
+			visibility: hidden;
+			width: 100%;
+			padding-top: 50px;
+			// margin-bottom: -3px;
+		}
+		.banner{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -50%;
+			width: 100%;
+			margin-top: 50px;
+			// box-shadow: 0px 20px 60px rgba(0,0,0,0.15);
+		}
+	}
+	// 数据生态圈
+	.layer7{
+		min-height: 350px;
+		.banner{
+			position: relative;
+			width: 320px;
+			margin: 0 auto;
+			margin-top: 40px;
+		}
+
+		@keyframes orbit {
+			0% {
+				transform: rotateZ(0deg); 
+				-webkit-transform: rotateZ(0deg); 
+				-moz-transform: rotateZ(0deg); 
+				-ms-transform: rotateZ(0deg); 
+				-o-transform: rotateZ(0deg); 
+			}
+
+			100% {
+				transform: rotateZ(360deg); 
+				-webkit-transform: rotateZ(360deg); 
+				-moz-transform: rotateZ(360deg); 
+				-ms-transform: rotateZ(360deg); 
+				-o-transform: rotateZ(360deg); 
+			} 
+		}
+		@-webkit-keyframes orbit {
+			0% {
+				transform: rotateZ(0deg); 
+				-webkit-transform: rotateZ(0deg); 
+				-moz-transform: rotateZ(0deg); 
+				-ms-transform: rotateZ(0deg); 
+				-o-transform: rotateZ(0deg); 
+			}
+
+			100% {
+				transform: rotateZ(360deg); 
+				-webkit-transform: rotateZ(360deg); 
+				-moz-transform: rotateZ(360deg); 
+				-ms-transform: rotateZ(360deg); 
+				-o-transform: rotateZ(360deg); 
+			} 
+		}
+		@keyframes invert {
+			0% {
+				transform: rotateX(-90deg) rotateY(-360deg); 
+				-webkit-transform: rotateX(-90deg) rotateY(-360deg); 
+				-moz-transform: rotateX(-90deg) rotateY(-360deg); 
+				-ms-transform: rotateX(-90deg) rotateY(-360deg); 
+				-o-transform: rotateX(-90deg) rotateY(-360deg); 
+			}
+
+			100% {
+				transform: rotateX(-90deg) rotateY(0deg); 
+				-webkit-transform: rotateX(-90deg) rotateY(0deg); 
+				-moz-transform: rotateX(-90deg) rotateY(0deg); 
+				-ms-transform: rotateX(-90deg) rotateY(0deg); 
+				-o-transform: rotateX(-90deg) rotateY(0deg); 
+			} 
+		}
+		@-webkit-keyframes invert {
+			0% {
+				transform: rotateX(-90deg) rotateY(-360deg); 
+				-webkit-transform: rotateX(-90deg) rotateY(-360deg); 
+				-moz-transform: rotateX(-90deg) rotateY(-360deg); 
+				-ms-transform: rotateX(-90deg) rotateY(-360deg); 
+				-o-transform: rotateX(-90deg) rotateY(-360deg); 
+			}
+
+			100% {
+				transform: rotateX(-90deg) rotateY(0deg); 
+				-webkit-transform: rotateX(-90deg) rotateY(0deg); 
+				-moz-transform: rotateX(-90deg) rotateY(0deg); 
+				-ms-transform: rotateX(-90deg) rotateY(0deg); 
+				-o-transform: rotateX(-90deg) rotateY(0deg); 
+			} 
+		}
+
+		.galaxy {
+			top: 116px;
+
+			position: absolute;
+			width: 100%;
+			height: 100%;
+
+			transform: rotateX(65deg);
+			-webkit-transform: rotateX(65deg);
+			-moz-transform: rotateX(65deg);
+			-ms-transform: rotateX(65deg);
+			-o-transform: rotateX(65deg);
+			transform-style: preserve-3d;
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			-o-transform-style: preserve-3d;
+		}
+		.orbit {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			border-radius: 50%;
+			border: 2px solid rgba(255,255,255,0.1);
+
+			transform-style: preserve-3d;
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			-o-transform-style: preserve-3d;
+
+			animation-name: orbit;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			-webkit-animation-name: orbit;
+			-moz-animation-name: orbit;
+			-ms-animation-name: orbit;
+			-o-animation-name: orbit;
+			-webkit-animation-timing-function: linear;
+			-moz-animation-timing-function: linear;
+			-ms-animation-timing-function: linear;
+			-o-animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+			-ms-animation-iteration-count: infinite;
+			-o-animation-iteration-count: infinite;
+		}
+
+		.planet {
+			position: absolute;
+			top: 50%;
+
+			text-align: center;
+
+			border-radius: 50%;
+
+			animation-name: invert;
+			-webkit-animation-name: invert;
+			-moz-animation-name: invert;
+			-ms-animation-name: invert;
+			-o-animation-name: invert;
+			animation-timing-function: linear;
+			-webkit-animation-timing-function: linear;
+			-moz-animation-timing-function: linear;
+			-ms-animation-timing-function: linear;
+			-o-animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			-webkit-animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+			-ms-animation-iteration-count: infinite;
+			-o-animation-iteration-count: infinite;
+
+		}
+		.planet-name{
+			color: rgba(171,205,255,0.8);
+			font-size: 10px;
+
+			position: absolute;
+			top: 20px;
+			white-space: nowrap;
+  
+		}
+		/*
+			共五个轨道，从 1-5 由小及大
+		 */
+		
+		
+		// 线上商家
+		.orbit1{
+			// down
+			.planet{
+				top: 100%;
+				left: 50%;
+			}
+		}
+		.orbit2{
+			// left
+			// 线下传统企业
+			 
+			// 上
+			// 资讯公司
+			.planet-info{
+				top: 0;
+				right: 50%;
+			}
+
+		}
+		// 中小创业企业
+		.orbit3{
+			// 右
+			.planet{
+				right:  -(15px/2);
+			}
+		}
+		// 内容创业
+		.orbit4{
+			// 下
+			.planet{
+				top: 100%;
+				left: 50%;
+			}
+		}
+		// 包括三个子类：研究机构、媒体
+		.orbit5{
+			.planet-media{
+				top: 0;
+				right: 50%;
+			}
+			.planet-agency{
+
+			}
+		}
+		// 文案居中偏移
+		.orbit1 .planet .planet-name{
+			left: -100%;
+		}
+		.orbit2 .planet-offline .planet-name{
+			left: -210%;
+		}
+		.orbit2 .planet-info .planet-name{
+			left: -100%;
+		}
+		.orbit3 .planet .planet-name{
+			left: -180%;
+		}
+		.orbit4 .planet .planet-name{
+			left: -120%;
+		}
+		.orbit5 .planet-media .planet-name{
+			left: -42%;
+		}
+		.orbit5 .planet-agency .planet-name{
+			left: -100%;
+		}
+		
+		// 速度
+		.orbit1, .orbit1 .planet{
+			animation-duration: (50s-3);
+			-webkit-animation-duration: (50s-3);
+			-moz-animation-duration: (50s-3);
+			-ms-animation-duration: (50s-3);
+			-o-animation-duration: (50s-3);
+		}
+		.orbit2, .orbit2 .planet{
+			animation-duration: (50s);	
+			-webkit-animation-duration: (50s);	
+			-moz-animation-duration: (50s);	
+			-ms-animation-duration: (50s);	
+			-o-animation-duration: (50s);	
+		}
+		.orbit3, .orbit3 .planet{
+			animation-duration: (50s-1);
+			-webkit-animation-duration: (50s-1);
+			-moz-animation-duration: (50s-1);
+			-ms-animation-duration: (50s-1);
+			-o-animation-duration: (50s-1);
+		}
+		.orbit4, .orbit4 .planet{
+			animation-duration: (50s-2);
+			-webkit-animation-duration: (50s-2);
+			-moz-animation-duration: (50s-2);
+			-ms-animation-duration: (50s-2);
+			-o-animation-duration: (50s-2);
+		}
+		.orbit5, .orbit5 .planet{
+			animation-duration: 50s;
+			-webkit-animation-duration: 50s;
+			-moz-animation-duration: 50s;
+			-ms-animation-duration: 50s;
+			-o-animation-duration: 50s;
+		}
+
+		// 颜色 
+		// @todo 暂时没有针对每一个行星设置不同颜色，为了与PC版保持一致
+		.orbit1 .planet,
+		.orbit2 .planet-offline,
+		.orbit2 .planet-info,
+		.orbit3 .planet,
+		.orbit4 .planet,
+		.orbit5 .planet-media,
+		.orbit5 .planet-agency{
+			background: -webkit-radial-gradient(#6D6DE2, #3B3BC2); 
+			background: -o-radial-gradient(#6D6DE2, #3B3BC2); 
+			background: -moz-radial-gradient(#6D6DE2, #3B3BC2); 
+			background: radial-gradient(#6D6DE2, #3B3BC2);
+		}
+
+		// 行星大小
+		.orbit1 .planet{
+			width: 15px; height: 15px;
+			margin-top: -(15px/2); margin-left: -(15px/2);
+		}
+		.orbit2 .planet-offline{
+			width: 14px; height: 14px;
+			margin-top: -(14px/2); margin-left: -(14px/2);
+		}
+		.orbit2 .planet-info{
+			width: 17px; height: 17px;
+			margin-top: -(17px/2); margin-left: -(17px/2);
+		}
+		.orbit3 .planet{
+			width: 15px; height: 15px;
+			margin-top: -(15px/2); margin-left: -(15px/2);
+		}
+		.orbit4 .planet{
+			width: 17px; height: 17px;
+			margin-top: -(17px/2); margin-left: -(17px/2);
+		}
+		.orbit5 .planet-media{
+			width: 13px; height: 13px;
+			margin-top: -(13px/2); margin-left: -(13px/2);
+		}
+		.orbit5 .planet-agency{
+			width: 15px; height: 15px;
+			margin-top: -(15px/2); margin-left: -(15px/2);
+		}
+		
+		// 轨道尺寸
+		.orbit1{
+			width: 200px; height: 200px;
+			margin-top: -(200px/2); margin-left: -(200px/2);
+		}
+		.orbit2{
+			width: 240px; height: 240px;
+			margin-top: -(240px/2); margin-left: -(240px/2);
+		}
+		.orbit3{
+			width: 280px; height: 280px;
+			margin-top: -(280px/2); margin-left: -(280px/2);
+		}
+		.orbit4{
+			width: 320px; height: 320px;
+			margin-top: -(320px/2); margin-left: -(320px/2);
+		}
+		.orbit5{
+			width: 360px; height: 360px;
+			margin-top: -(360px/2); margin-left: -(360px/2);
+		}
+
+		.earth{
+			position: absolute;
+			top: -5px;
+			left: 50%;
+			width: 50%;
+			margin-left: -23%;
+			z-index: 1;
+		}
+	}	
+}

@@ -1,0 +1,172 @@
+@import url(./reset.css);
+@import url(./common.css);
+@import url(./animate.css);
+
+.join{
+	.layer1{
+		height: 725px;
+		background: url(https://img.alicdn.com/tps/TB1uXEaNXXXXXcAXVXXXXXXXXXX-1916-725.jpg) center center no-repeat;
+	}
+	.layer2{
+		height: 871px;
+		text-align: center;
+		border-bottom: 1px solid #CECECE;
+		.wrapper{
+			padding-top: 63px;
+			padding-bottom: 74px;
+		}
+
+		.big-title{
+			color: #333;
+			font-size: 36px;
+			line-height: 47px;
+			margin-bottom: 16px;
+		}
+		.desc{
+			color: #999;
+			font-size: 14px;
+			line-height: 22px;
+			margin-bottom: 50px;
+		}
+
+		.position{
+			.item{
+				float: left;
+				width: 190px;
+				height: 400px;
+				margin-right: 8px;
+				border: 1px solid #CECECE;
+
+				&:last-child{
+					margin-right: 0px;
+				}
+				&:nth-child(1){
+					color: #0088FE;
+					.line{ background: #0088FE;}
+				}
+				&:nth-child(2){
+					color: #33A0FE;
+					.line{ background: #33A0FE;}
+				}
+				&:nth-child(3){
+					color: #00C49F;
+					.line{ background: #00C49F;}
+				}
+				&:nth-child(4){
+					color: #FFBB28;
+					.line{ background: #FFBB28;}
+				}
+				&:nth-child(5){
+					color: #FF8441;
+					.line{ background: #FF8441;}
+				}
+				&:nth-child(6){
+					color: #9575DE;
+					.line{ background: #9575DE;}
+				}
+				.sprite{
+					margin-top: 42px;
+				}
+
+				.title{
+					font-size: 18px;
+					margin-top: 12px;
+					line-height: 24px;
+				}
+				.line{
+					width: 32px;
+					height: 2px;
+					margin: 20px 0;
+					display: inline-block;
+				}
+				.list{
+					a{
+						color: #333333;
+						font-size: 14px;
+						line-height: 32px;
+						text-decoration: none;
+						&:hover{
+							// text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+
+		.button{
+			clear: both;
+			width: 530px;
+			height: 48px;
+			line-height: 48px;
+			display: inline-block;
+			border: 1px solid #000;
+			margin-top: 50px;
+			margin-bottom: 16px;
+			a{
+				font-size: 16px;
+				color: #333333;
+				display: block;
+				text-decoration: none;
+
+			}
+
+			&:hover{
+				background: #fafafa;
+			}
+		}
+
+		.description{
+			font-size: 14px;
+			color: #333333;
+		}
+
+	}
+
+}
+
+.footer{
+	clear: both;
+}
+
+
+.sprite {
+    background-image: url(https://img.alicdn.com/tps/TB1tXEbNXXXXXboXVXXXXXXXXXX-205-120.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-design {
+    width: 29px;
+    height: 48px;
+    background-position: -5px -5px;
+}
+
+.sprite-fenxi {
+    width: 45px;
+    height: 41px;
+    background-position: -44px -5px;
+}
+
+.sprite-product {
+    width: 34px;
+    height: 47px;
+    background-position: -99px -5px;
+}
+
+.sprite-suanfa {
+    width: 55px;
+    height: 42px;
+    background-position: -44px -62px;
+}
+
+.sprite-tech {
+    width: 57px;
+    height: 48px;
+    background-position: -143px -5px;
+}
+
+.sprite-yunying {
+    width: 54px;
+    height: 52px;
+    background-position: -109px -63px;
+}

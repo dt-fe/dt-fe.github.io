@@ -1,0 +1,122 @@
+@import url(./reset.css);
+@import url(./animate.css);
+@import url(./common.css);
+
+
+.wrapper {
+  .main-text{
+    clear: both;
+    text-align: center;
+  }
+}
+
+.layer2, .layer3, .layer4, .layer5 {
+  .main-text {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    .title {
+      font-size: 36px;
+      color: #333333;
+      line-height: 36px;
+      margin-bottom: 0.3em;
+    }
+    .introduction{
+      height: 26px;
+      font-size: 14px;
+      color: #999999;
+      line-height: 14px;
+    }
+  }
+}
+
+.layer1 {
+  background: #0D1633;
+  height: 635px;
+
+  .wrapper {
+    .main-text{
+      padding-top: 40px;
+      color: white;
+      position: relative;
+      .title{
+        font-size: 44px;
+        margin-bottom: 0.3em;
+      }
+      .introduction{
+        height: 66px;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(255,255,255,0.6);
+      }
+    }
+  }
+
+  .static-earth {
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    width: 544px;
+    height: 532px;
+    margin-left: -294px;
+    background: url(https://img.alicdn.com/tps/TB12CEgNpXXXXczXFXXXXXXXXXX-544-532.jpg) no-repeat;
+  }
+  #three-container {
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    width: 635px;
+    height: 635px;
+    margin-left: -328px;
+  }
+}
+
+.layer2 {
+  .wrapper {
+    height: 712px;
+
+    embed {
+      height: 630px;
+    }
+  }
+}
+
+.layer3 {
+  .wrapper {
+    height: 712px;
+
+    embed {
+      height: 630px;
+    }
+  }
+}
+
+.layer4 {
+  height: 600px;
+
+  .wrapper {
+    height: 600px;
+
+    .main-text {
+      margin-bottom: 30px;
+    }
+    .constructor {
+      height: 551px;
+      width: 100%;
+      background: url('https://img.alicdn.com/tps/TB1T._nNXXXXXbQaXXXXXXXXXXX-1200-551.png') no-repeat;
+    }
+  }
+}
+
+.layer5 {
+  // min-width: 1920px;
+  height: 303px;
+  color: white;
+  background: url(https://img.alicdn.com/tps/TB1wDQTOXXXXXXUXpXXXXXXXXXX-1920-303.png) center no-repeat;
+  .main-text {
+    margin-top: 0px;
+
+    .title {
+      padding-top: 100px;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@import url(./reset.css);
+@import url(./animate.css);
+@import url(./common.css);
+.wrapper .main-text {
+  clear: both;
+  text-align: center; }
+
+.layer2 .main-text, .layer3 .main-text, .layer4 .main-text, .layer5 .main-text {
+  margin-top: 60px;
+  margin-bottom: 15px; }
+  .layer2 .main-text .title, .layer3 .main-text .title, .layer4 .main-text .title, .layer5 .main-text .title {
+    font-size: 36px;
+    color: #333333;
+    line-height: 36px;
+    margin-bottom: 0.3em; }
+  .layer2 .main-text .introduction, .layer3 .main-text .introduction, .layer4 .main-text .introduction, .layer5 .main-text .introduction {
+    height: 26px;
+    font-size: 14px;
+    color: #999999;
+    line-height: 14px; }
+
+.layer1 {
+  background: #0D1633;
+  height: 635px; }
+  .layer1 .wrapper .main-text {
+    padding-top: 40px;
+    color: white;
+    position: relative; }
+    .layer1 .wrapper .main-text .title {
+      font-size: 44px;
+      margin-bottom: 0.3em; }
+    .layer1 .wrapper .main-text .introduction {
+      height: 66px;
+      font-size: 14px;
+      line-height: 22px;
+      color: rgba(255, 255, 255, 0.6); }
+  .layer1 .static-earth {
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    width: 544px;
+    height: 532px;
+    margin-left: -294px;
+    background: url(https://img.alicdn.com/tps/TB12CEgNpXXXXczXFXXXXXXXXXX-544-532.jpg) no-repeat; }
+  .layer1 #three-container {
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    width: 635px;
+    height: 635px;
+    margin-left: -328px; }
+
+.layer2 .wrapper {
+  height: 712px; }
+  .layer2 .wrapper embed {
+    height: 630px; }
+
+.layer3 .wrapper {
+  height: 712px; }
+  .layer3 .wrapper embed {
+    height: 630px; }
+
+.layer4 {
+  height: 600px; }
+  .layer4 .wrapper {
+    height: 600px; }
+    .layer4 .wrapper .main-text {
+      margin-bottom: 30px; }
+    .layer4 .wrapper .constructor {
+      height: 551px;
+      width: 100%;
+      background: url("https://img.alicdn.com/tps/TB1T._nNXXXXXbQaXXXXXXXXXXX-1200-551.png") no-repeat; }
+
+.layer5 {
+  height: 303px;
+  color: white;
+  background: url(https://img.alicdn.com/tps/TB1wDQTOXXXXXXUXpXXXXXXXXXX-1920-303.png) center no-repeat; }
+  .layer5 .main-text {
+    margin-top: 0px; }
+    .layer5 .main-text .title {
+      padding-top: 100px; }
+
+/*# sourceMappingURL=dv.css.map */

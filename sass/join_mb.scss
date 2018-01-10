@@ -1,0 +1,144 @@
+@import url(./reset.css);
+@import url(./common_mb.css);
+
+.join{
+	.layer1{
+		img{
+			width: 100%;
+		}
+		// background: url(https://img.alicdn.com/tps/TB1uXEaNXXXXXcAXVXXXXXXXXXX-1916-725.jpg) center center no-repeat;
+	}
+	.layer2{
+		text-align: center;
+		.wrapper{
+			padding-top: 40px;
+			padding-bottom: 30px;
+		}
+
+		.big-title{
+			color: #333;
+			font-size: 22px;
+			margin-bottom: 20px;
+		}
+		.desc{
+			color: rgba(51, 51, 51, 0.5);
+			font-size: 14px;
+			line-height: 22px;
+			margin-bottom: 30px;
+			padding: 0 15px;
+
+			.row{
+				margin-bottom: 15px;
+			}
+		}
+
+		.position{
+			width: 100%;
+			// overflow: hidden;
+			.row1 .item{
+
+				&:nth-child(1){
+					color: #0088FE;
+					.line{ background: #0088FE;}
+				}
+				&:nth-child(2){
+					color: #33A0FE;
+					.line{ background: #33A0FE;}
+				}
+				&:nth-child(3){
+					color: #00C49F;
+					.line{ background: #00C49F;}
+				}
+
+			}
+			.row2 .item{
+				
+				&:nth-child(1){
+					color: #FFBB28;
+					.line{ background: #FFBB28;}
+				}
+				&:nth-child(2){
+					color: #FF8441;
+					.line{ background: #FF8441;}
+				}
+				&:nth-child(3){
+					color: #9575DE;
+					.line{ background: #9575DE;}
+				}
+			}
+			.item{
+				width: 33%;
+				float: left;
+				.item-wrapper{
+					margin: 5px;
+					height: 240px;
+					border: 1px solid #CECECE;
+				}
+				.iconfont{
+					font-size: 30px;
+					margin-top: 20px;
+				}
+
+
+				.title{
+					font-size: 14px;
+					margin-top: 12px;
+					// line-height: 24px;
+				}
+				.line{
+					width: 32px;
+					height: 2px;
+					margin: 15px 0 10px;
+					display: inline-block;
+				}
+				.list{
+					a{
+						color: rgba(51, 51, 51, 0.5);
+						font-size: 12px;
+						line-height: 25px;
+						text-decoration: none;
+						&:hover{
+							// text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+
+		.button{
+			clear: both;
+			width: 80%;
+			height: 47px;
+			line-height: 47px;
+			display: inline-block;
+			border: 1px solid #1B1D26;
+			margin-top: 30px;
+			margin-bottom: 16px;
+			a{
+				font-size: 14px;
+				color: #333333;
+				display: block;
+				text-decoration: none;
+
+			}
+
+			&:hover{
+				background: #f4f4f4;
+			}
+		}
+
+		.description{
+			font-size: 12px;
+			color: #999;
+			div{
+				margin-bottom: 10px;
+			}
+		}
+
+	}
+	.footer{
+		background: #f4f4f4;
+	}
+}
+
+

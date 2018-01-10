@@ -1,0 +1,183 @@
+@import url(./reset.css);
+@import url(./common_mb.css);
+@keyframes moving-up {
+  0% {
+    margin-top: 6.0rem; }
+  100% {
+    margin-top: .0rem; } }
+@keyframes moving-down {
+  0% {
+    top: -5.0rem; }
+  100% {
+    top: .0rem; } }
+.animated.move-up {
+  animation: moving-up 2s 1 forwards;
+  -webkit-animation: moving-up 2s 1 forwards; }
+
+.animated.move-down {
+  animation: moving-down 2s 1 forwards;
+  -webkit-animation: moving-down 2s 1 forwards; }
+
+.alizs .title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #000;
+  opacity: 0.9;
+  line-height: 2.4rem; }
+.alizs .sub-title {
+  color: #000;
+  opacity: 0.5;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 0 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: .6rem; }
+.alizs .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
+  .alizs .text-wrapper .title {
+    color: #fff;
+    opacity: 0.9; }
+  .alizs .text-wrapper .sub-line {
+    text-align: center;
+    line-height: .5rem; }
+    .alizs .text-wrapper .sub-line i {
+      width: 4.6rem;
+      height: .1rem;
+      background-color: #fff;
+      display: inline-block; }
+  .alizs .text-wrapper .sub-title {
+    color: #fff;
+    opacity: 0.6; }
+.alizs .header {
+  position: relative;
+  text-align: center;
+  font-weight: bolder; }
+  .alizs .header .link {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffe14e;
+    text-decoration: none; }
+  .alizs .header .title {
+    color: #fff;
+    opacity: 1;
+    margin-top: 41%; }
+  .alizs .header .sub-title {
+    color: #fff;
+    opacity: 0.6; }
+  .alizs .header img {
+    width: 100%; }
+.alizs .sections .section {
+  text-align: center; }
+  .alizs .sections .section img {
+    width: 100%;
+    box-sizing: border-box; }
+.alizs .sections .layout1 {
+  text-align: center;
+  padding: 2.6rem 0 1.6rem; }
+  .alizs .sections .layout1 .sm-title {
+    font-size: 1.6rem;
+    margin-top: 1.0rem; }
+  .alizs .sections .layout1 .sub-title {
+    color: #000;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    margin-top: 0.5rem; }
+  .alizs .sections .layout1 ul {
+    vertical-align: top; }
+    .alizs .sections .layout1 ul li {
+      text-align: center;
+      display: inline-block;
+      width: 30%;
+      margin-right: .1rem;
+      vertical-align: top; }
+      .alizs .sections .layout1 ul li .icon img {
+        margin-top: 0;
+        padding: 0; }
+    .alizs .sections .layout1 ul li:nth-child(3n) {
+      margin-right: 0; }
+.alizs .sections .layout2 {
+  position: relative;
+  margin: 0;
+  padding: 0; }
+  .alizs .sections .layout2 .title {
+    margin-top: 4rem; }
+.alizs .sections .layout3 {
+  height: 37.5rem;
+  background-color: #fafafa; }
+  .alizs .sections .layout3 img {
+    width: 27rem;
+    margin-top: 6rem; }
+  .alizs .sections .layout3 .title {
+    padding-top: 4.6rem; }
+.alizs .sections .layout4 {
+  height: 37.5rem; }
+  .alizs .sections .layout4 .title {
+    padding-top: 3.1rem; }
+  .alizs .sections .layout4 img {
+    margin-top: 3rem;
+    width: 24rem; }
+.alizs .sections .layout5 {
+  position: relative;
+  padding-top: .0rem; }
+  .alizs .sections .layout5 .text-wrapper {
+    top: 3.4rem; }
+.alizs .sections .layout6 {
+  text-align: center;
+  height: 37.5rem;
+  background-color: #fafafa; }
+  .alizs .sections .layout6 .title {
+    padding-top: 3.7rem; }
+  .alizs .sections .layout6 img {
+    width: 23rem; }
+.alizs .sections .layout7 {
+  height: 37.5rem;
+  text-align: center; }
+  .alizs .sections .layout7 .title {
+    padding-top: 2.5rem; }
+  .alizs .sections .layout7 img {
+    width: 23rem;
+    margin-top: 0.8rem; }
+
+.footer {
+  background-color: #fafafa; }
+
+html {
+  font-size: 10px; }
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 8.53px !important; } }
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 10px !important; } }
+@media only screen and (min-width: 401px) {
+  html {
+    font-size: 10.69px !important; } }
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 11.04px !important; } }
+@media only screen and (min-width: 428px) {
+  html {
+    font-size: 11.41px !important; } }
+@media only screen and (min-width: 481px) {
+  html {
+    font-size: 12.82px !important; } }
+@media only screen and (min-width: 569px) {
+  html {
+    font-size: 15.17px !important; } }
+@media only screen and (min-width: 641px) {
+  html {
+    font-size: 17.09px !important; } }
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 20.48px !important; } }
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 27.31px !important; } }
+
+/*# sourceMappingURL=alizs_mb.css.map */
